@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Questions</title>
+</head>
+
+<body>
+    <nav class="navbar  text-center bg-primary navbar-light container">
+        <a class="navbar-brand text-white" href="#">Interview Questions</a>
+    </nav>
+    <div class="container links">
+        <a href="html1.html" class="active">HTML</a>
+        <a href="js1.html">JavaScript</a>
+        <a href="react1.html">React</a>
+
+    </div>
+    <header class="header container">React interview questions And Answers</header>
+
+    <section class="section  container">
+
+        <div class="section-div">
+            <h5>1. What is React js</h5>
+            <strong>Ans:</strong>
+            <div class="w3-cell w3-container w3-light-gray w3-border-left w3-cell-top" style="padding:20px;">
+                <p>React is a <b>JavaScript</b> library created by <b>Facebook</b></p>
+                <p>React is a <b>User Interface</b> (UI) library</p>
+                <p>React is a tool for building <b>UI components</b></p>
+                <p>React.js, commonly referred to as React, is an open-source JavaScript library used for building user
+                    interfaces (UIs) for web and mobile applications.</p>
+                <p>React is known for its component-based architecture, which allows developers to create reusable UI
+                    components. These components are self-contained and can be combined to build complex user
+                    interfaces.</p>
+
+            </div>
+        </div>
+        <div class="section-div">
+            <h5>2. What is difference between virtual dom and shallow
+                dom , dom in React js</h5>
+            <strong>Ans:</strong>
+            <p><strong>1.Dom(Document Object Model) =></strong>
+            <ul>
+                <li>The DOM is the actual representation of the structure of an HTML document in a web browser.</li>
+                <li>It's a tree-like structure where each HTML element (e.g., div, span, p) is represented as a node in
+                    the tree.</li>
+                <li>Manipulating the DOM directly in JavaScript can be slow and inefficient. Beacuse it update
+                    immediately the real dom</li>
+            </ul>
+            </p>
+            <p><strong>2.Virtual dom(Virtual Document Object Model) =></strong>
+            <ul>
+                <li>The Virtual DOM is a Copy of actual DOM.</li>
+                <li>It's a lightweight, in-memory representation of the actual DOM.</li>
+                <li>When you make changes to a component's state or props, React doesn't immediately update the real
+                    DOM. Instead, it creates a new Virtual DOM tree that represents what the updated UI should look
+                    like.</li>
+                <li><strong>React then performs a process called "reconciliation," </strong></li>
+            </ul>
+            </p>
+            <p><strong>3.Shallow Dom(Shallow Document Object Model) =></strong>
+            <ul>
+                <li>Shallow DOM is not a widely used React.</li>
+                <li>In web components, the Shadow DOM allowing components to have their own isolated DOM tree that
+                    doesn't interfere with the rest of the page's DOM</li>
+                <li>React doesn't use the Shadow DOM by default. Instead, it relies on the Virtual DOM to manage updates
+                    efficiently.</li>
+            </ul>
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>3. What is controlled and uncontrolled component in React js</h5>
+            <strong>Ans:</strong>
+            <p>In React, a <strong>controlled</strong> component is a component that is controlled by React state</p>
+            <p> A controlled component is a component that does not maintain any internal state. means form data is
+                handled by a React component.</p>
+
+            <p><strong>uncontrolled</strong> component is a component that maintains its own internal state.</p>
+            <p>An uncontrolled component is a component that maintains its own internal state. means where form data is
+                handled
+                by the DOM itself.</p>
+        </div>
+        <div class="section-div">
+            <h5>4. What is hooks in React js</h5>
+            <strong>Ans:</strong>
+            <p>Hooks are the new feature introduced in the React 16.8 version. It allows you to use state and other
+                React features without writing a class. </p>
+        </div>
+        <div class="section-div">
+            <h5>5. What is jsx, babel, webpack</h5>
+            <strong>Ans:</strong>
+            <p><strong>1. JSX(JavaScript XML): </strong>JSX{} allows us to write HTML in React by converting HTML into
+                React component Helping you to more easily create ui for your web Application it is combination of JS
+                and HTML</p>
+            <p><strong>2. BABLE: </strong>Babel is a JavaScript compiler that allows you to use the latest version of
+                JavaScript.Babel can compile JSX code into JavaScript that can be executed in the browser.it can convert
+                modern JavaScript (ES6+ syntax) into older versions (ES5) to ensure cross-browser compatibility. </p>
+
+            <p><strong>3. webpack</strong> Webpack is a popular JavaScript module bundler. It helps you manage and
+                bundle all the assets and dependencies of your web application, including JavaScript, CSS, images, and
+                more.Webpack is often used to bundle the JavaScript code that includes your React components, JSX, and
+                other assets.</p>
+        </div>
+        <div class="section-div">
+            <h5>6. What is Redux</h5>
+            <strong>Ans:</strong>
+            <p>Redux is an open-source JavaScript library used to manage application state. React uses Redux for
+                building the user interface</p>
+            <p>Redux is a framework used on the frontend of a web application.</p>
+            <p>Redux is a predictable state container designed to help you write JavaScript apps that behave
+                consistently across client, server, and native environments, and are easy to test.</p>
+
+        </div>
+        <div class="section-div">
+            <h5>7. What is reducer , action, store in Redux</h5>
+            <strong>Ans:</strong>
+            <p><strong>Store:- </strong>The central piece of Redux is the store, which holds the entire state tree of
+                the application. This state is typically represented as a JavaScript object. Accessing and updating the
+                state is done through the store's API.</p>
+            <p><strong>Action:- </strong>Actions(logic and calculation) are plain JavaScript objects that describe an
+                event or an intention to change the state. They must have a <strong>`type`</strong> property that
+                indicates the type of action being performed. </p>
+            <p><strong>Reducer:- </strong>Reducers are pure functions that take the current state and an action (logic
+                and calculation) as arguments and return a new state. </p>
+        </div>
+        <div class="section-div">
+            <h5>8. What is middleware in Redux</h5>
+            <strong>Ans:</strong>
+            <p><strong>A Redux middleware</strong> is a function returning a function, which takes next as a
+                parameter. Then the inner function returns another function which takes action
+                as a parameter and finally returns next(action).</p>
+            <img src="https://i.ibb.co/ZBbzBqX/xcvacvcavav.png" class="img-fluid my-4" alt="">
+        </div>
+        <div class="section-div">
+            <h5>9. Explain data flow in Redux</h5>
+            <strong>Ans:</strong>
+            <p>Redux follows the unidirectional data flow. It means that your application data will follow in one-way
+                binding data flow.</p>
+            <img src="https://www.oreilly.com/api/v2/epubs/9781788293969/files/assets/a86830bb-53a6-463d-ad47-f58a926041a3.png"
+                class="img-fluid my-4" alt="">
+            <ol>
+                <li>
+                    <p><strong>Action Dispatch</strong>:</p>
+                    <ul>
+                        <li>The data flow begins when an action is dispatched. Actions are plain JavaScript objects that
+                            describe an event or an intention to change the state.</li>
+                        <li>Each action must have a <code>type</code> property that defines the type of action being
+                            performed. Additional data, often referred to as the "payload,".</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Reducers</strong>:</p>
+                    <ul>
+                        <li>Reducers are pure functions responsible for handling the state updates based on the
+                            dispatched action.</li>
+                        <li>When an action is dispatched, all registered reducers are called.</li>
+                        <li>Each reducer takes the current state and the action as arguments and returns a new state
+                            object.</li>
+                        <li>Reducers must not modify the existing state but create a new state object that reflects the
+                            changes.</li>
+                        <li>Reducers typically use a <code>switch</code> statement to determine how to update the state
+                            based on the action's <code>type</code>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Store Update</strong>:</p>
+                    <ul>
+                        <li>After all reducers have been executed, the new state returned by each reducer is combined
+                            into a single state object.</li>
+                        <li>This new state object becomes the updated state of the Redux store.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>UI Component Updates</strong>:</p>
+                    <ul>
+                        <li>React components that are connected to the Redux store through the <code>connect</code>
+                            function (provided by the React-Redux library) receive updates when the state in the Redux
+                            store changes.</li>
+                        <li>These components can specify which parts of the state they are interested in using
+                            selectors. Selectors are functions that extract specific data from the application state.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Render UI</strong>:</p>
+                    <ul>
+                        <li>When a component receives updated state from the store, it re-renders with the new data.
+                        </li>
+                        <li>Components are re-rendered efficiently, as React uses a virtual DOM to determine the minimal
+                            changes needed to update the actual DOM.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>User Interaction</strong>:</p>
+                    <ul>
+                        <li>User interactions with the UI, such as clicking buttons or entering text, can trigger new
+                            actions to be dispatched.</li>
+                        <li>This starts the data flow cycle again, with new actions being dispatched, processed by
+                            reducers, and resulting in updated state.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="section-div">
+            <h5>10. What is Redux-Thunk</h5>
+            <strong>Ans:</strong>
+            <p>Redux Thunk middleware allows you to write action creators that return a function instead of an action.
+            </p>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220418234132/redux.png"
+                class="img-fluid my-4" alt="">
+        </div>
+        <div class="section-div">
+            <h5>11. What is Redux-Saga, Difference between Redux-thunk and Redux-saga</h5>
+            <strong>Ans:</strong>
+        </div>
+        <div class="section-div">
+            <h5>12. Difference between class component and function component</h5>
+            <strong>Ans:</strong>
+            <div class="row">
+                <div class="col-lg-6 border">
+                    <p><strong>Class Components</strong>:</p>
+                    <ol>
+                        <li>
+                            <p><strong>Class Syntax</strong>: Class components are defined using JavaScript ES6 class
+                                syntax. They must extend the <code>React.Component</code> base class.</p>
+                        </li>
+                        <li>
+                            <p><strong>State Management</strong>: Class components can manage their own internal state
+                                using the <code>this.state</code> object. State changes trigger component re-renders.
+                            </p>
+                        </li>
+                        <li>
+                            <p><strong>Lifecycle Methods</strong>: Class components have access to lifecycle methods
+                                such as <code>componentDidMount</code>, <code>componentDidUpdate</code>, and
+                                <code>componentWillUnmount</code>. These methods are used for side effects, data
+                                fetching, and cleanup operations.
+                            </p>
+                        </li>
+                        <li>
+                            <p><strong>Complex Logic</strong>: They are suitable for components with complex logic,
+                                state management, or lifecycle requirements.</p>
+                        </li>
+                        <li>
+                            <p><strong>Ref Usage</strong>: Refs can be used to access and interact with DOM elements or
+                                child components.</p>
+                        </li>
+                    </ol>
+                    <img src="https://i.ibb.co/rQJpDn6/code.png" class="img-fluid my-4" alt="">
+                </div>
+                <div class="col-lg-6 border">
+                    <p><strong>Function Components</strong>:</p>
+                    <ol>
+                        <li>
+                            <p><strong>Function Syntax</strong>: Function components are defined as JavaScript functions
+                                that return JSX. They are simpler and more concise than class components.</p>
+                        </li>
+                        <li>
+                            <p><strong>State Management</strong>: Function components can use state management via the
+                                <code>useState</code> hook, introduced in React 16.8. Hooks allow functional components
+                                to manage state and other React features previously available only in class components.
+                            </p>
+                        </li>
+                        <li>
+                            <p><strong>Lifecycle with Hooks</strong>: Function components can replicate the behavior of
+                                class component lifecycle methods using hooks like <code>useEffect</code> for side
+                                effects and data fetching.</p>
+                        </li>
+                        <li>
+                            <p><strong>Functional Paradigm</strong>: They are ideal for components with simpler logic
+                                and for adhering to the functional programming paradigm.</p>
+                        </li>
+                        <li>
+                            <p><strong>Ref Usage</strong>: Function components can also use the <code>useRef</code> hook
+                                to access DOM elements or child components, similar to class component refs.</p>
+                        </li>
+                    </ol>
+                    <img src="https://i.ibb.co/njmcZhH/zdf.png" class="img-fluid my-4" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="section-div">
+            <h5>13. How can we implement componentWillUnmount in function component</h5>
+            <strong>Ans:</strong>
+            <p>In function components in React, you can't use <code>componentWillUnmount</code> directly because it's
+                part of the class component lifecycle. Instead, you can achieve the same cleanup behavior using the
+                <code>useEffect</code> hook. Here's how you can implement the equivalent of
+                <code>componentWillUnmount</code> in a function component:
+            </p>
+            <img src="https://i.ibb.co/ZGH41K4/compmount.png" class="img-fluid my-4" alt="">
+
+            <p><strong>When Does <code>useEffect</code> Run</strong>:</p>
+            <ul>
+                <li>
+                    <p><strong>No Dependency Array</strong>: If you pass an empty dependency array (<code>[]</code>)
+                        as the second argument, the effect runs once after the initial render. It's equivalent to
+                        the behavior of <code>componentDidMount</code> in class components.</p>
+                </li>
+                <li>
+                    <p><strong>With Dependencies</strong>: If you provide an array of dependencies, the effect will
+                        run whenever any of the dependencies change. This allows you to control when the effect runs
+                        based on specific state or prop changes. It's similar to <code>componentDidUpdate</code> in
+                        class components.</p>
+                </li>
+                <li>
+                    <p><strong>No Second Argument</strong>: If you omit the second argument, the effect runs after
+                        every render, which is often not what you want. It's equivalent to not using
+                        <code>shouldComponentUpdate</code> in class components.
+                    </p>
+                </li>
+            </ul>
+
+
+            <p><strong>Cleanup</strong>:
+            <ul>
+                <li> You can return a cleanup function from the effect. This function is called when the component is
+                    unmounted or when the dependencies change before the next effect run. It allows you to clean up any
+                    resources or subscriptions to prevent memory leaks.</p>
+                </li>
+            </ul>
+        </div>
+        <div class="section-div">
+            <h5>14. useEffect,UseState,useMemo.useCallback hooks in Details</h5>
+            <strong>Ans:</strong>
+            <p><strong>1. useEffect</strong>:</p>
+            <ul>
+                <li><strong>Purpose</strong>: <code>useEffect</code> is used for managing side effects in your
+                    functional components. Side effects include data fetching, DOM manipulation, subscriptions, and
+                    more.</li>
+                <li><strong>Syntax</strong>: <br>
+                    <img src="https://i.ibb.co/25ybW9b/Use-Effect.png" class="img-fluid mb-4" alt="">
+                </li>
+                <li><strong>Usage</strong>:<ul>
+                        <li>The first argument is a function containing the side effect code.</li>
+                        <li>The optional second argument is an array of dependencies. When any of these dependencies
+                            change, the effect is re-run.</li>
+                        <li>The function can return a cleanup function, which will be executed before the next effect or
+                            when the component unmounts.</li>
+                    </ul>
+                </li>
+                <p><strong>Example</strong></p>
+                <img src="https://i.ibb.co/6s4GCZb/Use-Effectex.png" class="img-fluid mb-4" alt="">
+            </ul>
+            <p><strong>2. useState</strong>:</p>
+            <ul>
+                <li><strong>Purpose</strong>: <code>useState</code> is used to manage state within functional
+                    components. It allows you to declare and update component-level state.</li>
+                <li><strong>Syntax</strong>: <br>
+                    <img src="https://i.ibb.co/8bJ66T8/useState.png" class="img-fluid mb-4" alt="">
+
+                </li>
+                <li><strong>Usage</strong>:<ul>
+                        <li><code>state</code> holds the current state value.</li>
+                        <li><code>setState</code> is a function to update the state.</li>
+                        <li><code>initialState</code> is the initial value of the state.</li>
+                    </ul>
+                </li>
+                <p><strong>Example</strong></p>
+                <img src="https://i.ibb.co/j5bhKMD/use-State-Exe.png" class="img-fluid mb-4" alt="">
+
+            </ul>
+            <p><strong>3. useMemo</strong>:</p>
+            <ul>
+                <li><strong>Purpose</strong>: <code>useMemo</code> is used to memoize (cache) the result of a
+                    computation and recalculate it only when its dependencies change.</li>
+                <li><strong>Syntax</strong>: <br>
+                    <img src="https://i.ibb.co/YpQbY0H/useMemo.png" class="img-fluid mb-4" alt="">
+
+                </li>
+                <li><strong>Usage</strong>:<ul>
+                        <li>The first argument is a function that computes a value.</li>
+                        <li>The second argument is an array of dependencies.</li>
+                        <li>The computed value is cached and only recalculated when any of the dependencies change.</li>
+                    </ul>
+                </li>
+                <p><strong>Example</strong></p>
+                <img src="https://i.ibb.co/R6LBd2h/use-Memo-Exe.png" class="img-fluid mb-4" alt="">
+            </ul>
+            <p><strong>4. useCallback</strong>:</p>
+            <ul>
+                <li><strong>Purpose</strong>: <code>useCallback</code> is used to memoize (cache) a callback function
+                    and prevent unnecessary re-renders in child components that depend on it.</li>
+                <li><strong>Syntax</strong>: <br>
+                    <img src="https://i.ibb.co/D9rBLm1/Screenshot-1.png" class="img-fluid mb-4" alt="">
+
+                </li>
+                <li><strong>Usage</strong>:<ul>
+                        <li>The first argument is the callback function you want to memoize.</li>
+                        <li>The second argument is an array of dependencies.</li>
+                        <li>The memoized callback is cached and only recreated when any of the dependencies change.</li>
+                    </ul>
+                </li>
+                <p><strong>Example</strong></p>
+                <img src="https://i.ibb.co/cCdX8pw/use-Callbackexe.png" class="img-fluid mb-4" alt="">
+            </ul>
+        </div>
+        <div class="section-div">
+            <h5>15. Explain lifecycle method in React js</h5>
+            <strong>Ans:</strong>
+
+        </div>
+        <div class="section-div">
+            <h5>16. What is difference between export default and export in React js</h5>
+            <strong>Ans:</strong>
+            <ol>
+                <li>
+                    <p><strong><code>export default</code></strong>:</p>
+                    <ul>
+                        <li>When you use <code>export default</code>, you are exporting a single value or object as the
+                            default export for your module.</li>
+                        <li>There can be only one default export per module.</li>
+                        <li>You can give the default export any name you want when importing it in another module.</li>
+                        <li>Default exports are commonly used for exporting the main or primary functionality of a
+                            module.</li>
+                    </ul>
+
+                </li>
+                <li>
+                    <p><strong><code>export</code></strong>:</p>
+                    <ul>
+                        <li>When you use <code>export</code>, you are exporting one or more named exports. You can have
+                            multiple named exports in a single module.</li>
+                        <li>Named exports require you to specify the name when importing them in another module.</li>
+                        <li>Named exports are useful for exporting multiple values, functions, or objects from a module.
+                        </li>
+                    </ul>
+
+
+                </li>
+            </ol>
+        </div>
+        <div class="section-div">
+            <h5>17. What is portal in React js</h5>
+            <strong>Ans:</strong>
+            <p>In React, portals can be used to render an element outside of its parent component's DOM node while
+                preserving its position in the React hierarchy, </p>
+        </div>
+        <div class="section-div">
+            <h5>18. What is reconciliation in React js</h5>
+            <strong>Ans:</strong>
+            <p> React then compares the new VDOM with the previous one (from the previous render). This process is
+                called reconciliation. React's diffing algorithm, also known as the "reconciliation algorithm</p>
+            <strong>For More Read Q.2 Virtual dom</strong>
+        </div>
+        <div class="section-div">
+            <h5>19. What is useRef in React js</h5>
+            <strong>Ans:</strong>
+            <p>In React, portals can be used to render an element outside of its parent component's DOM node while
+                preserving its position in the React hierarchy, </p>
+        </div>
+    </section>
+    git remote set-url origin https://github.com/masterajinkya/React-Questions.git
+</body>
+
+</html>
