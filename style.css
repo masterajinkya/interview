@@ -1,0 +1,91 @@
+.header {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+}
+
+.section {
+    border: 1px solid black;
+    /* padding:  30px 0; */
+    margin-bottom: 50px;
+}
+
+.section-div {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+h5 {
+    color: blueviolet;
+    text-transform: capitalize;
+}
+
+p {
+    color: black;
+}
+
+.svvg {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.next {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+
+}
+
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+title {
+    text-transform: capitalize;
+}
+
+header {
+    text-transform: uppercase;
+}
+
+code {
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+
+.links a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+}

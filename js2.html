@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>html interview questions And Answers</title>
+</head>
+
+<body>
+    <nav class="navbar  text-center bg-primary navbar-light container">
+        <a class="navbar-brand text-white" href="#">Interview Questions</a>
+    </nav>
+    <div class="container links">
+        <a href="html1.html" class="active">HTML</a>
+        <a href="js1.html">JavaScript</a>
+        <a href="react1.html">React</a>
+    </div>
+    <header class="header container">JavaScript interview questions And Answers</header>
+    <section class="section container">
+        <div class="section-div">
+            <h5>21 Difference between null and undefined? </h5>
+            <p><b>Ans:</b>
+            <p><strong>Null:-</strong> Null means an empty value or a blank value to variable.</p>
+            <p><strong>Undefined:-</strong> Undefined means the variable has been declared, but its value has not been
+                assigned.</p>
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>22 What is NaN? </h5>
+            <p><b>Ans:</b>
+            <p>In JavaScript, NaN stands for Not a Number. It represents a value that is not a valid number. It can be
+                used to check whether a number entered is a valid number or not a number.</p>
+
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>23 Difference between undefined and undeclared? </h5>
+            <p><b>Ans:</b>
+            <p><strong>2.Undefined</strong>:</p>
+            <ul>
+                <li><strong>Undefined</strong> refers to a variable that has been declared but has not been assigned a
+                    value. In other words, it exists in the current scope, but it doesn't hold any meaningful data.</li>
+                <li>When you declare a variable without initializing it, it is automatically assigned the value
+                    <code>undefined</code> by JavaScript.
+                </li>
+            </ul>
+            <p><strong>1.Undeclared</strong>:</p>
+            <ul>
+                <li><strong>Undeclared</strong> refers to a variable that has not been declared in the current scope.
+                </li>
+                <li>This typically occurs when you try to use a variable that hasn't been defined using a
+                    <code>var</code>, <code>let</code>, or <code>const</code> declaration, or when you try to access a
+                    variable that is not in the current scope.
+                </li>
+            </ul>
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>24 What are global variables? </h5>
+            <p><b>Ans:</b>
+            <p></p>
+            <p>A <strong>Global variable</strong> global variable is one declared at the start of the code and is
+                accessible to all parts of the program. Variables are containers for storing data values. </p>
+            Variables that are created outside of a function are known as <strong>global variables</strong>
+            <br>Global variables can be used by everyone, both inside of functions and outside.
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>25 What is event capturing and event bubbling? && 78.What is bubbling? && Q.79 What is event bubbling? </h5>
+            <b>Ans:</b><br>
+
+            <p><strong>Event capturing </strong>means propagation of event is done from Parent elements to child element
+                in the DOM</p>
+            <div class="overflow-y-auto"><code class="!whitespace-pre hljs language-javascript">element.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, myFunction, <span class="hljs-literal">true</span>); <span class="hljs-comment">// The 'true' argument indicates the capture phase.</span>
+</code></div><br>
+            <p><strong>Event bubbling</strong> means propagation is done from child element to parent elements in the
+                DOM.</p>
+            <div class=" overflow-y-auto"><code class="!whitespace-pre hljs language-javascript">element.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">'click'</span>, myFunction); <span class="hljs-comment">// The absence of a third argument defaults to the bubbling phase.</span>
+</code></div>
+        </div>
+        <div class="section-div">
+            <h5>26 Difference between attribute and property? </h5>
+            <p><b>Ans:</b>
+            <p>Attributes are refering to additional information of an object. Properties are describing the
+                characteristics of an object.</p>
+        </div>
+        <div class="section-div">
+            <h5>27 Difference between argument and parameters? </h5>
+            <b>Ans:</b> <br>
+            <p><strong>Parameters</strong>The variables that are defined when the function is declared are known as
+                parameters.</p>
+            <p><strong>Argument</strong> The values that are declared within a function when the function is called are
+                known as an argument.</p>
+            <p><strong>EX:</strong></p>
+
+            <img src="https://i.stack.imgur.com/9lg1H.png" class="img-fluid" alt="">
+        </div>
+        <div class="section-div">
+            <h5>28 Explain setTimeOut and setInterval? </h5>
+            <b>Ans:</b>
+            <p><strong>setTimeout() :</strong>The setTimeout() method is used to call a function after a certain period
+                of time. </p>
+            <span class="token punctuation">.</span><span
+                class="token method function property-access">setTimeout</span><span
+                class="token punctuation">(</span><span class="token punctuation">)</span> <span
+                class="token comment">//executes the code after x seconds.</span><br> <br>
+            <img class="img-fluid" src="https://miro.medium.com/v2/resize:fit:1108/1*b4LIpLm-4XAcqFTDXkT2kw.png" alt="">
+
+
+            <p><strong>setInterval() :</strong>The setInterval() Javascript method is used to call a function repeatedly
+                at a specified interval of time.</p>
+            <span class="token punctuation">.</span><span
+                class="token method function property-access">setInterval</span><span
+                class="token punctuation">(</span><span class="token punctuation">)</span> <span
+                class="token comment">//executes the code **every** x seconds.</span>
+        </div>
+        <div class="section-div">
+            <h5>29 Is java script single threaded or multi threaded? </h5>
+            <b>Ans:</b><br>
+            <p>JavaScript is a single-threaded programming language, which means it executes code in a single sequence
+                or thread of execution. This single thread is often referred to as the "main thread" or the "UI thread"
+                in the context of web browsers</p>
+
+
+        </div>
+        <div class="section-div">
+            <h5>30 What is JSON? </h5>
+            <b>Ans:</b><br>
+            <div class="w3-cell w3-container w3-light-gray w3-border-left w3-cell-top" style="padding:20px;">
+                <p>JSON stands for <b>J</b>ava<b>S</b>cript <b>O</b>bject <b>N</b>otation</p>
+                <p>JSON is a lightweight format for storing and transporting data</p>
+                <p>JSON is often used when data is sent from a server to a web page</p>
+                <p>JSON is "self-describing" and easy to understand</p>
+            </div>
+
+
+        </div>
+        <div class="section-div">
+            <h5>31 How do you add key value pair in js? </h5>
+            <b>Ans:</b><br>
+            <p>1. In order to add <strong>key/value</strong> pair to a JavaScript object,Either we use dot notation or
+            </p>
+            <div class="row mb-4">
+                <div class="col-12 col-lg-6">
+                    <img src="https://i.ibb.co/Pms5Mz9/obj1.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2>Output</h2>
+                    <img src="https://i.ibb.co/LdR5X8T/out1.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <p>2. square bracket notation. Both methods are widely accepted. </p>
+            <div class="row mb-4">
+                <div class="col-12 col-lg-6">
+                    <img src="https://i.ibb.co/TW7qxDr/obj2.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2>Output</h2>
+                    <img src="https://i.ibb.co/LdR5X8T/out1.png" class="img-fluid" alt="">
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+
+            </div>
+            <div class="col-12 col-lg-6">
+
+            </div>
+        </div>
+        <div class="section-div">
+            <h5>32 What are pop up box available in js? </h5>
+            <b>Ans:</b><br>
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <p><strong>Alert Box (<code>alert()</code>):</strong></p>
+                    <li>An alert box is used to display a message to the user.</li>
+                    <h4>Alert Box</h4>
+                    <img src="https://i.ibb.co/fqDxyDF/alart.png" class="img-fluid mb-4" alt="">
+                    <button class="btn btn-primary" onclick="geekAlert()">
+                        Click here for alert box
+                    </button>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <p><strong>Prompt Box (<code>prompt()</code>):</strong></p>
+                    <li>A prompt box is used to get input from the user.</li>
+                    <h4>Prompt Box</h4>
+                    <img src="https://i.ibb.co/pWfH8FP/prom.png" class="img-fluid mb-4" alt="">
+
+                    <input type="button" class="btn btn-primary" onclick="geekPrompt();"
+                        value="Click here for Prompt box" />
+                </div>
+                <div class="col-12 col-lg-4">
+                    <p><strong>Confirm Box (<code>confirm()</code>):</strong></p>
+                    <li>A confirm box is used to get the user's confirmation or choice (usually "OK" or "Cancel").</li>
+                    <h4>Confirm Box</h4>
+                    <img src="https://i.ibb.co/ZJntmk4/confg.png" class="img-fluid mb-4" alt="">
+
+                    <button class="btn btn-primary" onclick="geekConfirm()">
+                        Click here for Confirm box
+                    </button>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="section-div">
+            <h5>33 What are looping structures in js? </h5>
+            <b>Ans:</b>
+
+            <p><strong>1. <code>for</code> Loop:</strong></p>
+            <li>The <code>for</code> loop is used when you know the number of iterations in advance.</li>
+            <li>It consists of three parts: initialization, condition, and increment/decrement.</li>
+            <li>Example:</li>
+            <img src="https://i.ibb.co/pLLDKcS/for.png" class="img-fluid mb-4" alt="">
+
+            <p><strong>2. <code>while</code> Loop:</strong></p>
+            <ul>
+                <li>The <code>while</code> loop continues executing a block of code as long as a specified condition is
+                    true.</li>
+                <li>It's suitable when you don't know the number of iterations in advance.</li>
+                <li>Example:</li>
+            </ul>
+            <img src="https://i.ibb.co/27Nywvh/do-while.png" class="img-fluid mb-4" alt="">
+
+            <p><strong>3. <code>do...while</code> Loop:</strong></p>
+            <ul>
+                <li>The <code>do...while</code> loop is similar to the <code>while</code> loop, but it guarantees that
+                    the block of code is executed at least once before checking the condition.</li>
+                <li>Example:</li>
+            </ul>
+            <img src="https://i.ibb.co/kgV952P/do-while-png-2-png.png" class="img-fluid mb-4" alt="">
+
+            <p><strong>4. <code>for...in</code> Loop:</strong></p>
+            <ul>
+                <li>The <code>for...in</code> loop is used to iterate over the properties of an object.</li>
+                <li>It's often used for iterating over the keys (property names) of an object.</li>
+                <li>Example:</li>
+            </ul>
+            <img src="https://i.ibb.co/jWFzmCM/for-in.png" class="img-fluid mb-4" alt="">
+
+            <p><strong>5. <code>for...of</code> Loop:</strong></p>
+            <ul>
+                <li>The <code>for...of</code> loop is used to iterate over the values of iterable objects like arrays,
+                    strings, and more.</li>
+                <li>It's especially useful for iterating through arrays.</li>
+                <li>Example:</li>
+            </ul>
+            <img src="https://i.ibb.co/5Y3SSVt/for-of.png" class="img-fluid mb-4" alt="">
+
+            <p><strong>6. <code>forEach()</code> Method:</strong></p>
+            <ul>
+                <li>The <code>forEach()</code> method is available for arrays and is used to iterate through array
+                    elements.</li>
+                <li>It provides a more concise and expressive way to loop through arrays.</li>
+                <li>Example:</li>
+            </ul>
+            <img src="https://i.ibb.co/4W027T5/foreach.png" class="img-fluid mb-4" alt="">
+
+
+        </div>
+        <div class="section-div">
+            <h5>34 What is variable typing in js? </h5>
+            <b>Ans:</b>
+            <p>
+                <strong>1. Dynamic Typing:</strong> JavaScript does not require you to declare the data type of a
+                variable when you create it. Instead, the data type is determined dynamically based on the value
+                assigned to the variable. <br>
+                <img src="https://i.ibb.co/bmr8Mgp/1.png" class="img-fluid mb-4" alt=""><br>
+                <strong>2. Type Coercion: </strong>JavaScript performs type coercion, which means it will automatically
+                convert values from one type to another in certain situations<br>
+                <img src="https://i.ibb.co/G7YXwNR/2.png" class="img-fluid mb-4" alt=""><br>
+                <strong>3. Type Inference: </strong>JavaScript infers the data type of a variable based on the value it
+                currently holds. When you assign a value to a variable, JavaScript determines its data type
+                accordingly.<br>
+                <img src="https://i.ibb.co/NmhjvD6/Screenshot-1.png" class="img-fluid mb-4" alt=""><br>
+            <p><strong>4. Explicit Type Conversion:</strong> While JavaScript handles many type conversions
+                automatically, you can also explicitly convert values from one type to another using functions like
+                <code>parseInt()</code>, <code>parseFloat()</code>, <code>String()</code>, <code>Number()</code>, etc.
+            </p>
+            <img src="https://i.ibb.co/0Q22QQ6/4.png" class="img-fluid mb-4" alt="">
+        </div>
+        <div class="section-div">
+            <h5>35 Data types in js? </h5>
+            <b>Ans:</b> ref:que.no - 3
+
+        </div>
+        <div class="section-div">
+            <h5>36 Difference between get and post? </h5>
+            <b>Ans:</b>
+            <h4>The GET Method</h4>
+            <p>GET is used to request data from a specified resource.</p>
+            <p>Note that the query string (name/value pairs) is sent in the URL of a GET request:</p>
+            <h4>The POST Method</h4>
+            <p>POST is used to send data to a server to create/update a resource.</p>
+            <p>The data sent to the server with POST is stored in the request body of the HTTP request:</p>
+
+            <div class="row">
+                <div class="col-sm-12 col-lg-6  border p-3">
+                    <h4>The GET Method</h4>
+                    <p><b>Some notes on GET requests:</b></p>
+                    <ul>
+                        <li>GET requests can be cached</li>
+                        <li>GET requests remain in the browser history</li>
+                        <li>GET requests can be bookmarked</li>
+                        <li>GET requests have length restrictions</li>
+                        <li>GET requests are only used to request data (not modify)</li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-lg-6  border p-3">
+                    <h4>The POST Method</h4>
+                    <p><b>Some notes on POST requests:</b></p>
+                    <ul>
+                        <li>POST requests are never cached</li>
+                        <li>POST requests do not remain in the browser history</li>
+                        <li>POST requests cannot be bookmarked</li>
+                        <li>POST requests have no restrictions on data length</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="section-div">
+            <h5>37 How to empty array in js? </h5>
+            <b>Ans:</b>
+            <ol>
+                <li>
+                    <p><strong>Setting the Array Length to 0</strong>:
+                        You can set the length of the array to 0. This effectively removes all elements from the array.
+                    </p>
+                    <img src="https://i.ibb.co/gzwJx7r/1.png" class="img-fluid mb-4" alt="">
+                </li>
+                <li>
+                    <p><strong>Using the <code>splice()</code> Method</strong>:
+                        The <code>splice()</code> method can be used to remove elements from an array. By specifying 0
+                        as the second parameter, you remove all elements starting from index 0.</p>
+                    <img src="https://i.ibb.co/xfVvK2T/2.png" class="img-fluid mb-4" alt="">
+
+                </li>
+                <li>
+                    <p><strong>Using the <code>pop()</code> Method in a Loop</strong>:
+                        You can repeatedly use the <code>pop()</code> method in a loop until the array is empty.</p>
+                    <img src="https://i.ibb.co/vLY0Jj9/Screenshot-1.png" class="img-fluid mb-4" alt="">
+
+                </li>
+                <li>
+                    <p><strong>Using the <code>shift()</code> Method in a Loop</strong>:
+                        Similarly, you can use the <code>shift()</code> method in a loop until the array is empty.</p>
+                    <img src="https://i.ibb.co/dPxXFsj/4.png" class="img-fluid mb-4" alt="">
+
+                </li>
+                <li>
+                    <p><strong>Reassigning the Array Variable</strong>:
+                        You can also reassign the array variable to a new, empty array.</p>
+                    <img src="https://i.ibb.co/7SZWS05/Screenshot-2.png" class="img-fluid mb-4" alt="">
+
+                </li>
+            </ol>
+
+
+        </div>
+        <div class="section-div">
+            <h5>38 What is iief in js? </h5>
+            <b>Ans:</b>
+            <p><strong>"IIFE"</strong>: ["Immediately Invoked Function Expression."]</p>
+            <p>An IIFE is a JavaScript function that is defined and executed immediately after its creation. </p>
+            <p>It is often used to create a private scope for variables and functions to prevent them from polluting the
+                global scope.</p>
+            <img src="https://i.ibb.co/p4XD8Ms/fun-1.png" class="img-fluid mb-4" alt="">
+
+
+            <ol>
+                <li>
+                    <p><code>(function () { ... })</code>: This part defines an anonymous function. The function is
+                        wrapped in parentheses to make it an expression rather than a declaration. This is necessary
+                        because in JavaScript, a function declaration must have a name, but in this case, we don't need
+                        one.</p>
+                </li>
+                <li>
+                    <p><code>(...)</code> immediately invokes (calls) the function. This means that as soon as the
+                        JavaScript engine encounters the closing parenthesis, it executes the function.</p>
+                </li>
+            </ol>
+            <img src="https://i.ibb.co/GFs7m0N/fun-2.png" class="img-fluid mb-4" alt="">
+
+        </div>
+        <div class="section-div">
+            <h5>39 What is asynchronous programming in js? </h5>
+            <b>Ans:</b>
+            <p>Functions running in <b>parallel</b> with other functions are called <b>asynchronous</b></p>
+            <p>In the real world, callbacks are most often used with asynchronous functions.</p>
+            <p>A typical example is JavaScript <code class="w3-codespan">setTimeout()</code>.</p>
+
+
+            <h4 id="what-is-the-difference-between-synchronous-vs-asynchronous-javascript-" level="2">What is the
+                Difference Between Synchronous vs Asynchronous JavaScript?</h4>
+            <div style="overflow:auto">
+                <table class="table border">
+                    <thead>
+                        <tr>
+                            <th style="text-align:center">Sr. no.</th>
+                            <th style="text-align:center">Synchronous JavaScript</th>
+                            <th style="text-align:center">Asynchronous JavaScript</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align:center">1</td>
+                            <td style="text-align:center">Instruction in synchronous code executes in a given sequence.
+                            </td>
+                            <td style="text-align:center">Instructions in asynchronous code can execute in parallel.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">2</td>
+                            <td style="text-align:center">Each operation waits for the previous operation to complete
+                                its execution.</td>
+                            <td style="text-align:center">Next operation can occur while the previous operation is still
+                                getting processed.</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">3</td>
+                            <td style="text-align:center">Most of the time JavaScript is used as Synchronous code.</td>
+                            <td style="text-align:center">Asynchronous JavaScript is preferred in situations in which
+                                execution gets blocked indefinitely.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+
+        </div>
+        <div class="section-div">
+            <h5>40 What is a pure function? </h5>
+            <b>Ans:</b>
+            <p>A<strong> Pure Function</strong> is a function (a block of code) that <strong>always returns the same
+                    result if the same arguments are passed</strong>.</p>
+            <p><strong>1. Deterministic:</strong> Given the same input, a pure function will always return the same
+                output. </p>
+            <p><strong>2. No Side Effects:</strong> A pure function does not have any side effects, such as modifying
+                global variables, mutating data structures</p>
+            <img src="https://i.ibb.co/Ct9spSY/pure.png" class="img-fluid mb-4" alt=""><br>
+
+            <strong>Contrast this with an impure function:</strong><br>
+            <img src="https://i.ibb.co/x2Kb3RD/impure.png" class="img-fluid mb-4" alt="">
+            <p>The <code>impureAdd</code> function is not pure because it modifies the <code>result</code> variable outside of its scope, which is a side effect.</p>
+
+
+        </div>
+
+
+        <div class="next">
+            <a class="btn btn-success text-white" href="js1.html">&larr; Previous </a>
+            <a class="btn btn-success text-white ml-5" href="js3.html"> Next &rarr; </a>
+        </div>
+
+        <script>
+            function geekAlert() {
+                alert("This is an alert box!");
+            }
+            function geekPrompt() {
+                let x = prompt("Please enter your name:");
+                // document.write("Your ID : " + x);
+            }
+            function geekConfirm() {
+                var x;
+                if (confirm("Do you want to proceed?") == true) {
+                    x = "OK pressed!";
+                } else {
+                    x = "Cancel!";
+                }
+                document.getElementById("geek").innerHTML = x;
+            }
+        </script>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>html interview questions And Answers</title>
+</head>
+
+<body>
+    <nav class="navbar  text-center bg-primary navbar-light container">
+        <a class="navbar-brand text-white" href="#">Interview Questions</a>
+    </nav>
+    <div class="container links">
+        <a href="html1.html" class="active">HTML</a>
+        <a href="js1.html">JavaScript</a>
+        <a href="react1.html">React</a>
+    </div>
+    <header class="header container">JavaScript interview questions And Answers</header>
+    <section class="section container">
+
+        <div class="section-div">
+            <h5>61 What is o/p of 1+1 + ‘hello’? </h5>
+            <b>Ans:</b>
+            <p>So, the output of the expression <code>1 + 1 + 'hello'</code> in JavaScript is the string
+                <code>'2hello'</code>.
+            </p>
+            <p><code>(1 + 1) </code>number && <code>('hello')</code> string</p>
+
+        </div>
+        <div class="section-div">
+            <h5>62 Wha is o/p of ‘hello ’+ 1 +1=? </h5>
+            <b>Ans:</b>
+            <p>So, the output of the expression <code>'hello ' + 1 + 1</code> in JavaScript is the string
+                <code>'hello 11'</code>.
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>63 How to get even/odd no out from arrat x=[1,1,2,3,4,5,6,7,8] </h5>
+            <b>Ans:</b>
+            <p>You can filter even and odd numbers from an array in JavaScript using the <code>filter()</code> method
+            </p>
+            <img src="https://i.ibb.co/tQn1SJd/even.png" alt="" class="img-fluid mb-4">
+            <img src="https://i.ibb.co/nCH6dmx/out2.png" alt="" class="img-fluid mb-4">
+
+        </div>
+        <div class="section-div">
+            <h5>64 What is output of number + boolean? </h5>
+            <b>Ans:</b>
+            <p>When you use the <code>+</code> operator to add a number and a boolean in JavaScript, JavaScript performs
+                type coercion to convert the boolean value to its numeric equivalent. In JavaScript, <code>true</code>
+                is equivalent to <code>1</code>, and <code>false</code> is equivalent to <code>0</code>. Here's how it
+                works:</p>
+            <img src="https://i.ibb.co/x3PL8p6/asdf.png" alt="" class="img-fluid mb-4">
+
+        </div>
+        <div class="section-div">
+            <h5>65 Output of console.log([1,2]+ [1,2]) </h5>
+            <b>Ans:</b>
+            <p>In this case, the arrays <code>[1, 2]</code> and <code>[1, 2]</code> are converted to strings
+                <code>"1,2"</code> and <code>"1,2"</code>, respectively. Then, the <code>+</code> operator concatenates
+                these two strings,<code>"1","2"+"1","2"</code> resulting in the string <code>"1,21,2"</code>.
+            </p>
+            <img src="https://i.ibb.co/M6wYCk2/lkjcv.png" alt="" class="img-fluid mb-4">
+
+        </div>
+        <div class="section-div">
+            <h5>66 What is o/p of NaN === NaN </h5>
+            <b>Ans:</b>
+            <p>In JavaScript, <code>NaN</code> (Not-a-Number) is a special value that represents the result of an
+                undefined or unrepresentable mathematical operation. Interestingly, <code>NaN</code> is not equal to
+                itself according to the strict equality operator (<code>===</code>).</p>
+            <img src="https://i.ibb.co/KmHKQDh/Screenshot-1.png" alt="" class="img-fluid mb-4">
+        </div>
+        <div class="section-div">
+            <h5>68.What is anonymous function in JavaScript</h5>
+            Ans -
+            An anonymous function in JavaScript is a function that is defined without a name. It's a function
+            expression that doesn't have an identifier associated with it. Anonymous functions are often used when
+            you need a function for a short, one-time use, and you don't intend to reuse it elsewhere in your code.
+        </div>
+        <br>
+        <div class="section-div">
+            <h5>69.String method in JavaScript</h5>
+            Ans -
+            JavaScript provides a variety of built-in methods for manipulating and working with strings.
+            <ul>
+                <li>length: Returns the length (number of characters) of the string.</li>
+                <li>indexOf : Returns the index of the first occurrence of the specified search value within the
+                    string.</li>
+                <li>lastIndexOf : Returns the index of the last occurrence of the specified search value within the
+                    string.</li>
+                <li>slice : Extracts a portion of the string and returns a new string.</li>
+                <li>toUpperCase : Converts the string to uppercase. </li>
+                <li>toLowerCase : Converts the string to lowercase</li>
+            </ul>
+        </div>
+        <br>
+        <div class="section-div">
+            <h5>70.Definition of JavaScript</h5>
+            Ans - an object-oriented computer programming language commonly used to create interactive effects
+            within web browsers
+            <br>
+            JavaScript can be used for Client-side developments as well as Server-side developments. JavaScript is
+            both an imperative and declarative type of language. JavaScript contains a standard library of objects,
+            like Array, Date, and Math, and a core set of language elements like operators, control structures, and
+            statements
+        </div>
+        <br>
+        <div class="section-div">
+            <h5>71.How to compare two objects in JavaScript?</h5>
+            <strong>Ans-</strong>
+            <p>Usually, when you compare <em>data types</em> like <code>int</code> and <code>strings</code> in
+                JavaScript, you use the equality operators (<code>==</code> and <code>===</code>). However, comparing
+                <em>objects</em> with <code>==</code> and <code>===</code> will not work.
+            </p>
+            <p>To fix this, one option is to stringify both objects and then use the equality operators.</p>
+            <h6>Using <code>JSON.stringify()</code></h6>
+            <p>We first convert the objects to their stringified version using <code>JSON.stringify()</code> and then
+                compare them using <code>===</code>:</p>
+            <img src="https://i.ibb.co/4VP7R28/img1.png" class="img-fluid mb-4" alt="">
+            If the order of the properties is different, the above method will evaluate as false even though the
+            properties are the same:
+            <img src="https://i.ibb.co/mth2JJD/img2.png" class="img-fluid mb-4" alt="">
+            <h6>Using lodash</h6>
+            <p><strong>lodash</strong> is a JavaScript library that offers <code>_.isEqual(value1, value2)</code>, which
+                performs a deep comparison between two values to check if they are equivalent.</p>
+            <img src="https://i.ibb.co/Q6R9Kbf/img3.png" class="img-fluid mb-4" alt="">
+
+        </div>
+        <br>
+        <div class="section-div">
+            <h5>72.What is InstanceOf Operator in JavaScript?</h5>
+            Ans - The instanceof operator in JavaScript is used to determine whether an object is an instance of a
+            particular constructor or class. It checks the prototype chain of the object to see if the constructor's
+            prototype property exists anywhere in that chain. In other words, it checks if an object inherits from a
+            specific constructor's prototype.
+        </div>
+        <br>
+        <div class="section-div">
+            <h5>73.What is strict mode in JavaScript?</h5>
+            Ans - Strict mode in JavaScript is a feature that enforces a stricter set of rules and behaviors for
+            writing JavaScript code. When strict mode is enabled, it helps catch common coding mistakes and prevent
+            the use of certain error-prone features.
+        </div>
+        <br>
+        <div class="section-div">
+            <h5>74.What is super function in JavaScript?</h5>
+            Ans -
+            In JavaScript, the super keyword is used to call functions or access properties of a parent class within
+            a subclass. It's commonly used in the context of object-oriented programming when working with classes
+            and inheritance. The super keyword allows you to access and invoke methods and properties defined in the
+            parent class from the subclass.
+        </div>
+        <br>
+        <div class="section-div">
+            <h5>75.Difference between Slice and Splice method in JavaScript?</h5>
+            <strong>Ans -</strong>
+<br>
+<img src="https://i.ibb.co/MGjmcjF/code1.png" class="img-fluid mb-4" alt="">
+</div>
+        <br>
+        <div class="section-div">
+            <h5>76.What is bind in JavaScript?</h5>
+            Ans -
+            In JavaScript, the bind() method is used to create a new function with a specific this value and
+            optional arguments. It is often used to bind a function to a particular object or context, ensuring that
+            the this value inside the function will always refer to the specified object, regardless of how the
+            function is called
+        </div>
+        <br>
+        <div class="section-div">
+            <h5>77.What is call by value and call by reference in JavaScript?</h5>
+            Ans - In JavaScript, when passing arguments to functions, it's important to understand the concepts of
+            "call by value" and "call by reference," although these terms can sometimes be misleading due to the way
+            JavaScript handles data types.
+            <br>
+            <br>
+            <h5>Call by Value -</h5>
+
+            In languages that strictly follow call by value, a copy of the actual value of the variable is passed to
+            the function. This means that changes made to the parameter within the function do not affect the
+            original value outside the function. JavaScript's primitive data types (such as numbers, strings,
+            booleans) behave like call by value
+            <br>
+            <br>
+            <h5> Call by Reference -</h5>
+            In languages that strictly follow call by reference, a reference or memory address of the variable is
+            passed to the function. This means that changes made to the parameter within the function affect the
+            original value outside the function. JavaScript's objects (including arrays and functions) behave like
+            call by reference.
+        </div>
+        <br>
+        <div class="section-div">
+            <h5>81.Difference between JavaScript and jQuery?</h5>
+            Ans -
+            <div>
+                <h5>JavaScript:-</h5>
+                <br>
+
+                <h6>1 Language Nature:</h6>
+                JavaScript is a programming language. It is a versatile and widely-used scripting language that can
+                be
+                used for a variety of purposes, including web development, server-side programming (Node.js), and
+                more.
+
+                <h6>2 Execution Environment:</h6>
+                JavaScript can run in various environments, including web browsers, servers (Node.js), mobile apps,
+                and
+                more.
+
+                <h6>3 DOM Manipulation:</h6>
+                JavaScript allows direct manipulation of the Document Object Model (DOM), which represents the
+                structure
+                of a web page. It provides native methods to interact with HTML elements, attributes, and events.
+
+                <h6>4 Learning Curve:</h6>
+                Learning JavaScript requires understanding its core concepts, including variables, data types,
+                functions, control structures, and object-oriented programming (OOP) principles.
+
+                <h6>5 Browser Compatibility:</h6>
+                JavaScript code can sometimes require cross-browser testing and adjustments to ensure compatibility
+                across different browsers.
+            </div>
+            <br>
+            <div>
+                <h5>jQuery:-</h5>
+                <br>
+                <h6>Library:</h6>
+                jQuery is a JavaScript library. It is not a programming language but rather a set of pre-written
+                JavaScript functions and methods packaged in a convenient API.
+                <h6>Simplification:</h6>
+                jQuery simplifies common tasks in web development, such as DOM manipulation, event handling,
+                animations, and AJAX requests. It provides a concise syntax for performing these tasks, often
+                requiring less code compared to plain JavaScript.
+                <h6>DOM Manipulation:</h6>
+                jQuery abstracts and simplifies DOM manipulation, providing a consistent interface across different
+                browsers. This can help mitigate some browser compatibility issues.
+                <h6>Learning Curve:</h6>
+                Learning jQuery is often faster than learning pure JavaScript due to its simplified API. However,
+                it's important to have a foundational understanding of JavaScript concepts to use jQuery
+                effectively.
+                <h6>Browser Compatibility:</h6>
+                jQuery handles many browser compatibility issues internally, making it easier to write code that
+                works consistently across browsers.
+            </div>
+
+        </div>
+        <div class="next">
+            <a class="btn btn-success text-white" href="js3.html">&larr; Previous </a>
+            <a class="btn btn-success text-white ml-5" href="js1.html"> First &rarr; </a>
+        </div>
+    </section>
+
+</body>
+
+</html>

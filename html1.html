@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>html interview questions And Answers</title>
+</head>
+
+<body>
+    <nav class="navbar  text-center bg-primary navbar-light container">
+        <a class="navbar-brand text-white" href="#">Interview Questions</a>
+    </nav>
+    <div class="container links">
+        <a href="html1.html" class="active">HTML</a>
+        <a href="js1.html">JavaScript</a>
+        <a href="react1.html">React</a>
+    </div>
+    <header class="header container">html interview questions And Answers</header>
+
+    <section class="section container">
+        <div class="section-div">
+            <h5>1 What is HTML?</h5>
+            <p><b>Ans:</b> HTML stands for Hyper Text Markup Language. HTML is the standard markup language for creating
+                Web pages. HTML describes the structure of a Web page.</p>
+        </div>
+        <div class="section-div">
+            <h5>2 What is hyperlink in HTML? </h5>
+            <p><b>Ans:</b> a hyperlink (or link) is an item like a word or button that points to another location. When
+                you click on a link, the link will take you to the target of the link, which may be a webpage, document
+                or other online content.</p>
+        </div>
+        <div class="section-div">
+            <h5>3 What is semantic tag? </h5>
+            <p><b>Ans:</b>Semantic means "relating to meaning".Semantic HTML tags are tags that define the meaning of
+                the content they contain. ex: header , main , and footer tags are semantic because they are used to
+                represent different sections on an HTML page</p>
+        </div>
+        <div class="section-div">
+            <h5>4 What is image map? </h5>
+            <p><b>Ans:</b>An image map is an HTML feature that enables developers to create hyperlinks over different
+                sections of an image, without having to break up the image. Ex: google map contain different contries in
+                one image on click of one contrie it shows discription of contries</p>
+        </div>
+        <div class="section-div">
+            <h5>5 What is iframe? </h5>
+            <p><b>Ans:</b>
+                The iframe tag specifies an inline frame. An inline frame is used to embed(add) another document(web page) within the
+                current HTML document.
+                <!-- <iframe src="https://vegamovies.gold/"> -->
+                    <div class="w3-code notranslate htmlHigh" style="position: relative;">
+                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="https://www.google.com"</span> title<span class="attributevaluecolor" style="color:mediumblue">="W3Schools Free
+                        Online Web Tutorials"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                     <div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></div>
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>6 What is <code>&lt;!doctype&gt;</code> is it case sensitive ? </h5>
+            <p><b>Ans:</b>
+                The DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is
+                written in. This ensures that the web page is parsed the same way by different web browsers. &&
+                Doctype declaration for HTML5 is not case sensitive and does not require a closing tag.
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>7 What will happen if there is no <code>&lt;!doctype&gt;</code>? </h5>
+            <p><b>Ans:</b>
+                If there is no doctype declaration in an HTML document, the browser will enter "quirks mode" or "almost
+                standards mode," depending on the browser's version. In quirks mode, the browser emulates the behavior
+                of older browsers, often leading to inconsistent rendering and layout issues.
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>
+                8 Difference between block and inline element?
+            </h5>
+            <p><b>Ans:</b>
+                <b>Block elements</b> typically start on a new line and take up the full available width of their parent
+                container<br>
+                EX:&rarr; &lt;div&gt;, &lt;p&gt;, &lt;h1&gt; to &lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;,
+                &lt;table&gt;,
+                etc. <br>
+                <b>Inline elements,</b> on the other hand, do not start on a new line, and they only take up as much
+                width as necessary to display their content. They do not create new line breaks or force other elements
+                to be placed below them <br>
+                EX:&rarr; &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;m&gt;, &lt;img&gt;, &lt;button&gt;, etc.
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>9 Example inline element?</h5>
+            <p><b>Ans:</b>
+                EX:&rarr; &lt;span&gt;, &lt;a&gt;, &lt;strong&gt;, &lt;m&gt;, &lt;img&gt;, &lt;button&gt;, etc.
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>10 Which properties inline element doesnt entertain?</h5>
+            <p><b>Ans:</b>
+                Inline elements in HTML have certain properties that they don't "entertain" or don't fully support.<br>
+            <ol>
+                <li> Width and height: Inline elements usually do not have a width or height property. Their size is
+                    determined by the content they contain</li>
+                <li>Margin: Margins are often not applied to inline elements. Instead, the spacing between inline
+                    elements is typically controlled using padding or other layout techniques.</li>
+                <li>Float: Float property is generally not applicable to inline elements.</li>
+                <li>Clear: Clear property is not relevant for inline elements, as they do not affect the flow of
+                    surrounding elements.</li>
+                <li>Display: The display property values that change the layout behavior, such as "block" or
+                    "inline-block", are generally not used with inline elements, as they are already inline by default.
+                </li>
+                <li>Vertical-align: While inline elements support the vertical-align property to align them with respect
+                    to the baseline of the surrounding text, it doesn't fully function like it does with table cells or
+                    block elements.</li>
+            </ol>
+
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>11 What are attributes?</h5>
+            <p><b>Ans:</b>
+                In HTML (Hypertext Markup Language), attributes are additional information or properties that can be
+                applied to HTML elements. They provide extra details about an element and modify its behavior,
+                appearance, or functionality. Attributes are used within the opening tag of an HTML element and are
+                specified using a name-value pair format. <br>
+                <b>
+
+                    <div class="p-1 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">elementName</span> <span class="hljs-attr">attribute</span>=<span class="hljs-string">"value"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">elementName</span>&gt;</span>
+                    </code></div>
+                    <div class=" p-1 overflow-y-auto"><code class="!whitespace-pre hljs language-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.example.com"</span>&gt;</span>Visit Example Website<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    </code></div>
+
+                </b>
+                EX:&rarr; "id","src","class","alt","style","title","placeholder","disabled"
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>12 Different types of links?</h5>
+            <p><b>Ans:</b>
+            <ol>
+                <li> <b>Internal links</b>– internal linking occurs when a site links to other URLs on the same
+                    site;<br>
+                    &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+                    <a href="about.html">About Us</a>
+                </li>
+                <li><b>External links</b>– external linking occurs when a site links to URLs on a different site;<br>
+                    &lt;a href="https://www.example.com" target="_blank"&gt;Visit Example Website &lt;/a&gt;
+                    <a href="https://www.example.com" target="_blank">Visit Example Website</a>
+                </li>
+                <li><b>Backlinks</b>–A backlink is when one website links to another with an anchor text. An example of
+                    a backlink is any article you find that links to another source or website. <br></li>
+            </ol>
+
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>13 What is canvas ? </h5>
+            <p><b>Ans:</b> A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no
+                content<br>
+            <p>The <code class="w3-codespan">&lt;canvas&gt;</code> element is only a container for graphics. You must
+                use JavaScript to actually draw the graphics.</p>
+            The markup looks like this:
+            <div class="w3-code w3-border notranslate htmlHigh" style="position: relative;">
+                <div>
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>canvas<span class="attributecolor" style="color:red">
+                            id<span class="attributevaluecolor" style="color:mediumblue">="myCanvas"</span> width<span
+                                class="attributevaluecolor" style="color:mediumblue">="200"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/canvas<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                </div>
+                <!-- <div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div> -->
+            </div>
+
+            <p>Here is an example of a basic, empty canvas:</p>
+            <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>14 What is svg? </h5>
+            <p><b>Ans:</b>
+            <ul>
+                <li>SVG stands for Scalable Vector Graphics</li>
+                <li>SVG is used to define graphics for the Web</li>
+                <li>SVG is a W3C recommendation</li>
+            </ul>
+            SVG defines vector-based graphics in XML format. <br>
+            <p>The HTML <code class="w3-codespan">&lt;svg&gt;</code> element is a container for SVG graphics.</p>
+            <h2>SVG Circle</h2>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+            </svg>
+            <div class="svvg">
+                <div class="w3-code notranslate htmlHigh" style="position: relative;">
+                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                            html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+                        class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span
+                        class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red">
+                            width<span class="attributevaluecolor" style="color:mediumblue">="100"</span> height<span
+                                class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span
+                        class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>circle<span class="attributecolor" style="color:red">
+                            cx<span class="attributevaluecolor" style="color:mediumblue">="50"</span> cy<span
+                                class="attributevaluecolor" style="color:mediumblue">="50"</span> r<span
+                                class="attributevaluecolor" style="color:mediumblue">="40"</span> stroke<span
+                                class="attributevaluecolor" style="color:mediumblue">="green"</span>
+                            stroke-width<span class="attributevaluecolor" style="color:mediumblue">="4"</span> fill<span
+                                class="attributevaluecolor" style="color:mediumblue">="yellow"</span> /</span><span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span
+                        class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                            style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                            style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                        style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
+                            class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                    <!-- <div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div> -->
+                </div>
+            </div>
+
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>15 What are new features of html 5? </h5>
+            <p><b>Ans:</b>
+                As of my last update in September 2021, HTML5 was already well-established with its own set of features.
+            <ul>
+                <li><b>Semantic Elements -</b> Semantic Elements: HTML5 introduced a set of new semantic elements that
+                    better define the structure of a web page, making it easier for search engines and screen readers to
+                    understand the content. Examples include <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>,
+                    <code>&lt;nav&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, and
+                    <code>&lt;main&gt;</code>.
+                </li>
+                <li><b>Audio and Video Support -</b>HTML5 added native support for embedding audio and video content
+                    without the need for third-party plugins like Flash.This was achieved through the
+                    <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements, which made multimedia
+                    integration simpler and more accessible.
+                </li>
+                <li><b>Canvas -</b>HTML5 introduced the <code>&lt;canvas&gt;</code> element, which provides a way to
+                    draw graphics and create animations directly in the browser using JavaScript.</li>
+                <li><b>Geolocation API -</b> With HTML5, web developers gained access to the Geolocation API, enabling
+                    websites to request and utilize a user's geographic location (with their permission) for
+                    location-aware applications.</li>
+                <li><b>Local Storage -</b>HTML5 introduced the localStorage and sessionStorage APIs, allowing websites
+                    to store data locally on the user's device. </li>
+                <li><b>Web Storage and Web SQL -</b>HTML5 added new ways to interact with databases, such as the Web
+                    Storage API and Web SQL (although the latter is now deprecated in favor of other technologies like
+                    IndexedDB).</li>
+                <li><b>Responsive Images -</b> HTML5 brought support for responsive images with the
+                    <code>&lt;picture&gt;</code> element, allowing developers to serve different image sources based on
+                    the user's device or screen size
+                </li>
+                <li><b>Form Improvements:</b> HTML5 introduced new input types, such as
+                    <code>&lt;input type="email"&gt;</code>, <code>&lt;input type="date"&gt;</code>, and
+                    <code>&lt;input type="range"&gt;</code>, providing better user experience and improved data
+                    validation.
+                </li>
+                <li><b>Web Workers -</b> HTML5 enabled the use of Web Workers, which allowed developers to run scripts
+                    in the background on separate threads, preventing the main UI thread from becoming unresponsive
+                    during time-consuming tasks.</li>
+                <li><b>WebSockets -</b> HTML5 introduced the WebSocket API, enabling bidirectional communication between
+                    web browsers and servers over a single, long-lived connection. This facilitated real-time,
+                    low-latency data exchange.</li>
+
+            </ul>
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>16 What is the use of article tag? </h5>
+            <p><b>Ans:</b>
+            <p>The <code class="w3-codespan">&lt;article&gt;</code> tag specifies independent, self-contained content.
+            </p>
+            An article should make sense on its own and it should be possible to distribute it independently from the
+            rest of the site.
+            <p>Potential sources for the <code class="w3-codespan">&lt;article&gt;</code> element:</p>
+            <ul>
+                <li>Forum post</li>
+                <li>Blog post</li>
+                <li>News story</li>
+            </ul>
+            <div class="w3-code svvg notranslate htmlHigh" style="position: relative;">
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>article<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Google Chrome<span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Google Chrome is a web browser
+                developed by Google, released in 2008. Chrome is the world's most popular web
+                browser today!<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Mozilla
+                Firefox<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Mozilla Firefox is an open-source
+                web browser developed by
+                Mozilla. Firefox has been the second most popular web browser since January,
+                2018.<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>Microsoft Edge<span
+                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span>Microsoft Edge is a web browser developed by
+                Microsoft, released in 2015.
+                Microsoft Edge replaced Internet Explorer.<span class="tagnamecolor" style="color:brown"><span
+                        class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                        style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span
+                        class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                <!-- <div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div> -->
+            </div>
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>17 Explain web storage in HTML5?</h5>
+            <p><b>Ans:</b>
+                In HTML5, web storage is a client-side web API that allows web applications to store and manage data
+                locally in a user's web browser. It provides two mechanisms for storing data: <code>localStorage</code>
+                and <code>sessionStorage</code>. These storage mechanisms are similar but have some differences in their
+                behavior and persistence.
+            <ol>
+                <li>
+                    <p><code>localStorage</code>:</p>
+                    <ul>
+                        <li><code>localStorage</code> is a type of web storage that allows data to be stored
+                            persistently in the web browser across sessions.</li>
+                        <li>Data stored in <code>localStorage</code> has no expiration date and will remain available
+                            even after the browser is closed and reopened.</li>
+                        <li>The data stored in <code>localStorage</code> is accessible from the same domain and protocol
+                            that set the data. It means data stored on one page of your website can be accessed by other
+                            pages within the same domain.</li>
+                        <li>It is important to note that <code>localStorage</code> has a size limit, typically around
+                            5-10 MB, depending on the browser.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><code>sessionStorage</code>:</p>
+                    <ul>
+                        <li><code>sessionStorage</code> is another type of web storage that stores data for a single
+                            session. A session lasts as long as the browser tab or window remains open, and the data is
+                            available across multiple pages during that session.</li>
+                        <li>Unlike <code>localStorage</code>, data stored in <code>sessionStorage</code> is cleared when
+                            the browser tab or window is closed. It is meant for temporary storage that is only relevant
+                            during a specific browsing session.</li>
+                        <li>As with <code>localStorage</code>, data stored in <code>sessionStorage</code> is accessible
+                            from the same domain and protocol that set the data.</li>
+                    </ul>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>18 What are various formating tags in HTML5?</h5>
+            <p><b>Ans:</b>
+                In HTML5, you can use various formatting tags to structure and style your content. Here are some
+                commonly used formatting tags in HTML5:
+            <ol>
+                <li>
+                    <p><b></b><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></b>: These are heading tags used for
+                        creating headings of
+                        different levels, where <code>&lt;h1&gt;</code> is the highest level and <code>&lt;h6&gt;</code>
+                        is the
+                        lowest.</p>
+                </li>
+                <li>
+                    <p><b><code>&lt;p&gt;</code></b>: The paragraph tag is used to create paragraphs of text.</p>
+                </li>
+                <li>
+                    <p><b><code>&lt;strong&gt;</code> or <code>&lt;b&gt;</code></b>: <strong>tags are used to make text
+                            bold.</strong> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;em&gt;</code> or <code>&lt;i&gt;</code></b>: <em>These tags are used to italicize
+                            text.</em> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;u&gt;</code></b>: <u>This tag is used to underline text.</u> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;s&gt;</code> or <code>&lt;del&gt;</code></b>: <del>These tags are used to
+                            strikethrough text.</del> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;sup&gt;</code></b>: <sup>This tag is used to display text in superscript (above the
+                            regular baseline)</sup> .
+                    </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;sub&gt;</code></b>: <sub>This tag is used to display text in subscript (below the
+                            regular baseline).</sub> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;blockquote&gt;</code></b>:
+                    <blockquote>This tag is used for long quotations, typically indented and with extra
+                        spacing.</blockquote>
+                    </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;q&gt;</code></b>: <q>This tag is used for shorter inline quotations, typically
+                            surrounded by quotation
+                            marks.</q> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;code&gt;</code></b>:
+                        <code>This tag is used to display computer code or programming instructions.</code> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;pre&gt;</code></b>:
+                    <pre>This tag is used for preformatted text, maintaining spacing and line breaks as
+                            they appear in the code.</pre>
+                    </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;address&gt;</code></b>:
+                    <address>This tag is used to format contact information, such as an address.</address>
+                    </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;abbr&gt;</code></b>: <abbr title="">This tag is used for abbreviations, acronyms, or
+                            initialisms, providing a full
+                            explanation on hover.</abbr> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;mark&gt;</code></b>: <mark>This tag is used to highlight text, usually with a yellow
+                            background.</mark> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;small&gt;</code></b>: <small>This tag is used to display text in a smaller font
+                            size.</small> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;ins&gt;</code></b>: <ins> This tag is used to indicate inserted text.</ins></p>
+                </li>
+                <li>
+                    <p><b><code>&lt;time&gt;</code></b>: <time>This tag is used to represent a specific time or a range
+                            of time.</time> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;cite&gt;</code></b>: <cite>This tag is used to indicate the title of a work (e.g.,
+                            book, article) that is
+                            being cited.</cite> </p>
+                </li>
+                <li>
+                    <p><b><code>&lt;dfn&gt;</code></b>: <dfn>This tag is used to define a term or phrase.</dfn> </p>
+                </li>
+            </ol>
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>19 New input types in HTML5?</h5>
+            <p><b>Ans:</b>
+                As of my last update in September 2021, HTML5 introduced several new input types to make it easier to
+                collect specific types of data from users. These input types are designed to enhance user experience and
+                provide better support for various input data</p>
+
+            <ol>
+                <li>
+                    <p><strong>color</strong>: This input type allows users to select a color using a color picker. The
+                        selected
+                        color's value is represented as a hexadecimal RGB value.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="color"&gt;</code></span>
+                        <input type="color">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>date</strong>: The date input type enables users to enter dates through a date picker. It
+                        helps
+                        ensure that users input valid dates in a standardized format.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="date"&gt;</code></span>
+                        <input type="date">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>time</strong>: The time input type lets users enter times using a time picker, ensuring a
+                        consistent time format.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="time"&gt;</code></span>
+                        <input type="time">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>datetime-local</strong>: This input type combines the date and time inputs, enabling
+                        users to
+                        input both date and time using a single control.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="datetime-local"&gt;</code></span>
+                        <input type="datetime-local">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>email</strong>: The email input type is specifically designed to capture email addresses
+                        and
+                        often includes validation to ensure the provided input is a valid email address.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="email"&gt;</code></span>
+                        <input type="email">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>url</strong>: The URL input type is used to gather website URLs and includes validation
+                        to ensure
+                        the user provides a valid URL.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="url"&gt;</code></span>
+                        <input type="url">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>number</strong>: The number input type allows users to input numeric values and can
+                        include
+                        attributes to specify minimum and maximum values, as well as step intervals.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="number"&gt;</code></span>
+                        <input type="number">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>range</strong>: The range input type allows users to select a value from a predefined
+                        range by
+                        sliding a slider control. This is useful for numeric input within a specified range.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="range"&gt;</code></span>
+                        <input type="range">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>search</strong>: The search input type is designed for search input fields and can be
+                        styled to
+                        include a search icon.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="search"&gt;</code></span>
+                        <input type="search">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>tel</strong>: The tel input type is used for collecting telephone numbers and can include
+                        validation for proper phone number formats.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="tel"&gt;</code></span>
+                        <input type="tel">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>file</strong>: The file input type allows users to upload files from their local system.
+                    </p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="file"&gt;</code></span>
+                        <input type="file">
+                    </div>
+                </li>
+                <hr>
+                <h4 class="my-4 ">Inputs Before Html 5 &darr;</h4>
+                <li>
+                    <p><strong>button</strong>: The button input type allows to create button.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="button"&gt;</code></span>
+                        <input type="button" onclick="alert('Hello World!')" value="Click Me!">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>checkbox</strong>: The checkbox input type allows to create checkbox.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="checkbox"&gt;</code></span>
+                        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                        <input type="checkbox" id="vehicle2" name="vehicle2" value="car">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>hidden</strong>: The hidden input type allows to create hidden input for user.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="hidden"&gt;</code></span>
+                        <input type="hidden">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>text</strong>: The text input type allows to write text.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="text"&gt;</code></span>
+                        <input type="text">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>password</strong>: The password input type allows to hide written password.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="password"&gt;</code></span>
+                        <input type="password">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>submit</strong>: The submit input type allows to submit form data.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="submit"&gt;</code></span>
+                        <input type="submit">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>reset</strong>: The reset input type allows to reset form data.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="reset"&gt;</code></span>
+                        <input type="reset">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>radio</strong>: The radio input type allows to create radio fields.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="radio"&gt;</code></span>
+                        <input type="radio">
+                        <input type="radio">
+
+                    </div>
+                </li>
+                <li>
+                    <p><strong>image</strong>: The image input type allows to link image url.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="image"&gt;</code></span>
+                        <input type="image"
+                            src="data:image/jpeg;base64,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"
+                            alt="Submit" width="48" height="48">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>month</strong>: The month input type allows to input month.</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="month"&gt;</code></span>
+                        <input type="month" id="bdaymonth" name="bdaymonth">
+                    </div>
+                </li>
+                <li>
+                    <p><strong>week</strong>: The week input type allows to input week .</p>
+                    <div class="form-group">
+                        <span><code class="w3-codespan">&lt;input type="week"&gt;</code></span>
+                        <input type="week" id="bdaymonth" name="bdaymonth">
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <div class="section-div">
+            <h5>20 Can we draw shapes in HTML5?</h5>
+            <p><b>Ans:</b> Yes, We can draw shapes in HTML5 using various techniques. HTML5 provides the <code>&lt;canvas&gt;</code>  element, which allows you to create and manipulate graphics on a web page using JavaScript. The <code>&lt;canvas&gt;</code> element provides a 2D drawing context that you can use to draw shapes, lines, and images.</p>
+        </div>
+
+
+        <div class="next">
+            <a class="btn btn-success text-white" href="html2.html">Next &rarr;</a>
+            <a class="btn btn-success text-white ml-5" href="html4.html"> Last Page  </a>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

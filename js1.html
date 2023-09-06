@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Questions</title>
+</head>
+
+<body>
+    <nav class="navbar  text-center bg-primary navbar-light container">
+        <a class="navbar-brand text-white" href="#">Interview Questions</a>
+    </nav>
+    <div class="container links">
+        <a href="html1.html" class="active">HTML</a>
+        <a href="js1.html">JavaScript</a>
+        <a href="react1.html">React</a>
+    </div>
+    <header class="header container">JavaScript interview questions And Answers</header>
+    <section class="section container">
+        <div class="section-div">
+            <h5>1 How to create new objects in js? </h5>
+            <p><b>Ans:</b>
+            <p>In JavaScript, you can create new objects using different methods. Here are a few common ways to create
+                new objects:</p>
+            </p>
+            <ol>
+                <li>
+                    <p><strong>Object Literal Notation:</strong>
+                        You can create an object using literal notation by defining its properties and values within
+                        curly braces <code>{}</code>.</p>
+                    <img src="https://i.ibb.co/c6yb3zL/11.png" class="img-fluid mb-4" alt=""><br>
+
+
+
+                </li>
+                <li>
+                    <p><strong>Constructor Function:</strong>
+                        You can define a constructor function and then use the <code>new</code> keyword to create new
+                        instances of the object.</p>
+                    <img src="https://i.ibb.co/sj5NDWw/12.png" class="img-fluid mb-4" alt=""><br>
+
+
+
+                </li>
+                <li>
+                    <p><strong>ES6 Class:</strong>
+                        You can create objects using ES6 classes, which provide a more organized and class-based
+                        approach to creating objects.</p>
+                    <img src="https://i.ibb.co/pnZGCq1/13.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>Object.create():</strong>
+                        You can create an object using the <code>Object.create()</code> method, which sets the prototype
+                        of the new object.</p>
+
+                    <img src="https://i.ibb.co/7JrY8r6/14.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>Using Object.assign():</strong>
+                        You can create a new object by copying the properties of existing objects using
+                        <code>Object.assign()</code>.
+                    </p>
+                    <img src="https://i.ibb.co/ZYpm0b2/Screenshot-1.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>Factory Functions:</strong>
+                        Factory functions are functions that return objects. They allow you to encapsulate object
+                        creation logic.</p>
+                    <img src="https://i.ibb.co/9W1hNcs/15.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+            </ol>
+        </div>
+        <div class="section-div">
+            <h5>2 What is prototype chain in js? </h5>
+            <p><b>Ans:</b>
+            <ul>
+                <li> The prototype chain is formed by linking objects to their prototypes. </li>
+                <li>The prototype chain is a mechanism that allows objects to inherit properties and methods from other objects</li>
+                <li>Every object can have exactly one prototype object. That prototype object can also have a prototype object, and so on</li>
+                <li>Each object has a private property which holds a link to another object called its prototype. That prototype object has a prototype of its own, and so on until an object is reached with null as its prototype. By definition, null has no prototype, and acts as the final link in this prototype chain.</li>
+            </ul>
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>3 Different type of data type in js? && 35.Data types in js?</h5>
+            <p><b>Ans:</b>
+            <p>JavaScript has several built-in data types, which can be categorized into two main categories:</p>
+            </p>
+            <p><strong>1. Primitive Data Types: Primitive | non-object | non-refrence-detatype </strong></p>
+            <ol>
+                <li>
+                    <p><strong>Number:</strong> Represents both integer and floating-point numbers. For example:
+                        <code>42</code>, <code>3.14</code>.
+                    </p>
+                    <img src="https://i.ibb.co/qMJxXG5/number.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>String:</strong> Represents sequences of characters. Enclosed in single or double quotes.
+                        For example: <code>'Hello, world!'</code>, <code>"JavaScript"</code>.</p>
+                    <img src="https://i.ibb.co/3kYQjx2/string.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>Boolean:</strong> Represents <code>true</code> or <code>false</code> values, used for
+                        logical operations. For example: <code>true</code>, <code>false</code>.</p>
+                    <img src="https://i.ibb.co/TMxFXnW/Boolean.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>Undefined:</strong> Represents a variable that has been declared but has no value
+                        assigned to it. Variables are initialized with <code>undefined</code> by default.</p>
+                    <img src="https://i.ibb.co/MpG1Srv/undef.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>Null:</strong> Represents an intentional absence of value. It's often used to indicate
+                        that a variable is intentionally empty or has no value.</p>
+                    <img src="https://i.ibb.co/mNmXLr4/null.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>Symbol (ES6):</strong> Represents a unique and immutable value, often used as object
+                        property keys to avoid naming collisions.</p>
+                    <img src="https://i.ibb.co/PWv9bj0/Screenshot-2.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>BigInt (ES11):</strong> Represents integers of arbitrary precision. Useful for working
+                        with very large numbers beyond the capabilities of the <code>Number</code> type.</p>
+                </li>
+            </ol>
+            <p><strong>2. Non-premitive Data Types: Reference Data Types | object | refrence-detatype </strong></p>
+            <ol>
+                <li>
+                    <p><strong>Object:</strong> Represents a collection of key-value pairs, where the keys are strings
+                        (or Symbols) and the values can be of any data type, including other objects. Objects are
+                        versatile and can hold functions, arrays, and other complex structures.</p>
+                    <img src="https://i.ibb.co/W52qmfm/obj.png" class="img-fluid mb-4" alt=""><br>
+                </li>
+                <li>
+                    <p><strong>Array:</strong> A specialized type of object that holds an ordered list of values. Arrays
+                        are accessed using numeric indices, and they can hold values of mixed data types.</p>
+                    <img src="https://i.ibb.co/kXnb9Hd/array.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>Function:</strong> A type that represents executable code. Functions can be defined using
+                        function declarations, function expressions, arrow functions, and more.</p>
+                    <img src="https://i.ibb.co/ZGzk4QD/function.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>Date:</strong> Represents date and time values, allowing manipulation and formatting of
+                        dates and times.</p>
+                    <img src="https://i.ibb.co/4R21BPk/date.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>RegExp:</strong> Represents regular expressions, used for pattern matching and
+                        manipulation of strings.</p>
+                    <img src="https://i.ibb.co/m4y3MS0/RegExp.png" class="img-fluid mb-4" alt=""><br>
+
+                </li>
+                <li>
+                    <p><strong>Map (ES6):</strong> Represents a collection of key-value pairs, similar to objects, but
+                        with more flexibility in key types and ordered iteration.</p>
+
+                </li>
+                <li>
+                    <p><strong>Set (ES6):</strong> Represents a collection of unique values, with no duplicates.</p>
+                </li>
+                <li>
+                    <p><strong>WeakMap (ES6) and WeakSet (ES6):</strong> Similar to <code>Map</code> and
+                        <code>Set</code>, but with weaker references, making them useful in scenarios where objects can
+                        be garbage collected.
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <div class="section-div">
+            <h5>4 Difference between Let Const and var? </h5>
+            <p><b>Ans:</b>
+            <p>
+            <p><code>let</code>, <code>const</code>, and <code>var</code> are all keywords used to declare variables in
+                JavaScript, but they have some key differences in terms of scope.</p>
+            </p>
+            </p>
+            <pre class="commando_selectable language-whatever grepper_code_expanded_no_bottom_margin"><code class="commando_code_block  language-whatever">
+            var:
+                - hoisted (always declared at top of scope, global if none)
+                - function scope
+            let:
+                - block scope
+                - not redeclarable
+            const:
+                - block scope
+                - not reassignable
+                - not redeclarable
+
+</code></pre>
+
+        </div>
+        <div class="section-div">
+            <h5>5 Difference between == and === in js? </h5>
+            <p><b>Ans:</b>
+            <p>In JavaScript, both == (loose equality) and === (strict equality) are used for comparison, but they have
+                different behaviors and comparison rules:</p>
+            </p>
+            <ol>
+                <li>
+                    <p><code>==</code> (Equality Operator):</p>
+                    <ul>
+                        <li>The <code>==</code> operator checks for equality of values while performing type coercion if
+                            the operands have different data types.</li>
+                        <li>Type coercion means that JavaScript may convert one or both operands to a common type before
+                            making the comparison.</li>
+                        <li>For example, <code>5 == "5"</code> would return <code>true</code> because JavaScript
+                            converts the string <code>"5"</code> to the number <code>5</code> before making the
+                            comparison.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><code>===</code> (Strict Equality Operator):</p>
+                    <ul>
+                        <li>The <code>===</code> operator checks for equality of values without performing type
+                            coercion.</li>
+                        <li>It requires both the value and the data type to be the same for the comparison to return
+                            <code>true</code>.
+                        </li>
+                        <li>For example, <code>5 === "5"</code> would return <code>false</code> because the types are
+                            different (number vs. string).</li>
+                    </ul>
+                </li>
+            </ol>
+            <pre grepper_trigger_added="1" style="position: relative;"><div class="bg-black rounded-md mb-4"><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript">
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">5</span> == <span class="hljs-string">"5"</span>);    <span class="hljs-comment">// true (type coercion)</span>
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-number">5</span> === <span class="hljs-string">"5"</span>);   <span class="hljs-comment">// false (strict comparison)</span>
+
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-literal">true</span> == <span class="hljs-number">1</span>);   <span class="hljs-comment">// true (type coercion)</span>
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-literal">true</span> === <span class="hljs-number">1</span>);  <span class="hljs-comment">// false (strict comparison)</span>
+
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-literal">null</span> == <span class="hljs-literal">undefined</span>);   <span class="hljs-comment">// true (type coercion)</span>
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-literal">null</span> === <span class="hljs-literal">undefined</span>);  <span class="hljs-comment">// false (strict comparison)</span>
+                </code></div></div></pre>
+        </div>
+        <div class="section-div">
+            <h5>6 What is first class function? </h5>
+            <p><b>Ans:</b>
+            <p>If the function are treated as variables </p>
+            <p>1. Assign A function to a variable =>> we can assign a function to variable just like any other value</p>
+            <p>2. Passed as arguments =>> you can pass function as arguments </p>
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>7 What are higher order function? </h5>
+            <p><b>Ans:</b>
+            <p>A higher-order function is a function that takes one or more functions as arguments or returns a function
+                as its result.</p>
+            ex: Map,Filter,Reduce etc
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>8 What is hoisting ? </h5>
+            <p><b>Ans:</b>
+            <p> <strong>variable Hoisting:</strong> All the declaration in page/scope are get shifted at the top of
+                page/scope.</p>
+            <div class="p-2 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x);  <span class="hljs-comment">// Outputs: undefined</span><br>
+                <span class="hljs-keyword">var</span> x = <span class="hljs-number">5</span>;
+                </code></div>
+            <div class="p-2 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x);  <span class="hljs-comment">// ReferenceError: x is not defined</span>
+                    <br><span class="hljs-keyword">let</span> x = <span class="hljs-number">5</span>;
+                    </code></div>
+            <p><strong>Function Hoisting:</strong> Function declarations are also hoisted to the top of their containing
+                scope, and they can be called before they are defined in the code.</p>
+            </p>
+            <div class="p-2 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-title function_">sayHello</span>();  <span class="hljs-comment">// Outputs: "Hello, world!"</span>
+
+                <br><span class="hljs-keyword">function</span> <span class="hljs-title function_">sayHello</span>(<span class="hljs-params"></span>) {
+      <br>              <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"Hello, world!"</span>);
+               <br> }
+                </code></div>
+        </div>
+        <div class="section-div">
+            <h5>9 What is temporal dead zone?</h5>
+            <p><b>Ans:</b></p>
+            <p>
+            <p><strong>Temporal Dead Zone (TDZ):</strong> During the TDZ phase, the variable exists in the scope, but
+                you cannot access its value. Any attempt to read the variable's value or perform operations on it will
+                result in a <code>ReferenceError</code>.</p>
+            </p>
+            <div class="p-2 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x);  <span class="hljs-comment">// ReferenceError: Cannot access 'x' before initialization</span>
+              <br>  <span class="hljs-keyword">let</span> x = <span class="hljs-number">5</span>;
+                </code></div>
+        </div>
+        <div class="section-div">
+            <h5>10 What is closures? && Q.82 Advantages of closure?</h5>
+            <p><b>Ans:</b>
+            <p>
+                A <strong>closure</strong> is a feature of JavaScript that allows inner functions to access the outer
+                scope of a function.
+            </p>
+            <pre class="brush: js notranslate" data-signature="+Qu8WlWXoShrjiAOG9QOYD5yts2YEXllFYRl8vh8PvI="
+                style="position: relative;"><code><span class="token keyword">function</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">var</span> name <span class="token operator">=</span> <span class="token string">"Mozilla"</span><span class="token punctuation">;</span> <span class="token comment">// name is a local variable created by init</span>
+                <span class="token keyword">function</span> <span class="token function">displayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  <span class="token comment">// displayName() is the inner function, that forms the closure</span>
+                  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// use variable declared in the parent function</span>
+                <span class="token punctuation">}</span>
+                <span class="token function">displayName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              <span class="token punctuation">}</span>
+              <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+              </code><div class="open_grepper_editor" title="Edit &amp; Save To Grepper"></div></pre>
+
+            </p>
+            <img src="https://i.ibb.co/c81Tgx0/qwer.png" class="img-fluid mb-4" alt="">
+            <h5>Advantages</h5>
+            <ol class="">
+                <li><strong>Encapsulation</strong>: Closures allow you to create private variables and functions that can only be accessed from within the closure. This can help you improve the structure and modularity of your code.</li>
+                <li><strong>State retention</strong>: Closures allow you to retain the state of a function even after it has finished running. This can be handy for creating function factories or other patterns that rely on maintaining state across multiple function calls.</li>
+                <li><strong>Currying</strong>: Closures can help you create curried functions, which are functions that can be called with a partial set of arguments and then return a new function that expects the remaining arguments. This can make your code more flexible and reusable, which is always a good thing!</li>
+                <li><strong>Memorization</strong>: Closures can be used to implement the memorization technique, which allows a function to remember and reuse its previous results. This can help you improve the performance of your code.</li>
+                <li><strong>Asynchronous programming</strong>: Closures can simplify asynchronous programming by allowing you to define and execute callback functions or async logic within the context of the asynchronous operation, rather than having to define them separately and pass them around as arguments.</li>
+                <li><strong>Event handling</strong>: Closures can be used to create event handlers that have access to variables and functions defined in their parent scope. This can be really helpful for implementing complex event-driven behavior in your code.</li>
+                </ol>
+
+        </div>
+        <div class="section-div">
+            <h5>11 What is scope in js?</h5>
+            <p><b>Ans:</b>
+            <p>
+                Scope determines the accessibility of variables, objects, and functions from different parts of the
+                code.
+            </p>
+            <p>
+                Scope determines the accessibility (visibility) of variables.
+            </p>
+            <p> <strong>JavaScript has two main types of scope:</strong><br></p>
+            <p><strong>1. Global Scope:</strong> Variables and functions declared outside of any function or block
+                (i.e.,
+                not enclosed within curly braces <code>{}</code>) have global scope. They are accessible from anywhere
+                in your JavaScript code, including within functions and blocks.</p>
+
+            <div class=" overflow-y-auto">
+                <code class="!whitespace-pre hljs language-javascript">
+                    <span class="hljs-keyword">const</span> globalVar = <span class="hljs-number">42</span>;<br>
+
+                <span class="hljs-keyword">function</span> <span class="hljs-title function_">globalFunction</span>(<span class="hljs-params"></span>) {
+                    <br><span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(globalVar); <span class="hljs-comment">// Accessible from inside the function</span>
+               <br> } <br>
+
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(globalVar);<br> <span class="hljs-comment">// Accessible from outside the function</span>
+                </code>
+            </div>
+            <p><strong>Local Scope:</strong> Variables and functions declared inside a function or block have local
+                scope. They are only accessible within the function or block in which they are declared. Local scope
+                variables are often called "local variables."</p>
+            <pre><div class="bg-black rounded-md mb-4"><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">localScopeExample</span>(<span class="hljs-params"></span>) {
+                    <span class="hljs-keyword">const</span> localVar = <span class="hljs-number">10</span>;
+                    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(localVar); <span class="hljs-comment">// Accessible within the function</span>
+                }
+
+                <span class="hljs-title function_">localScopeExample</span>();
+
+                <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(localVar); <span class="hljs-comment">// ReferenceError: localVar is not defined</span>
+                </code></div></div></pre>
+
+
+            </p>
+        </div>
+        <div class="section-div">
+            <h5>12 What is web storage? </h5>
+            <p><b>Ans:</b>
+            <p>
+                Web storage is a web browser feature that allows web applications to store data locally on a user's
+                device. It provides a simple and efficient way to store key-value pairs.
+            </p>
+            <p><strong>1.localStorage:</strong> This is a type of web storage that allows you to store data with no
+                expiration time. The data stored in <code>localStorage</code> remains available even after the browser
+                is closed and reopened, making it suitable for long-term storage. Each key-value pair you store in
+                <code>localStorage</code> is associated with a specific domain, and other web pages from the same domain
+                can access this data.
+            </p>
+            </p>
+            <pre><div class="bg-black rounded-md mb-4">
+                <div class="overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-comment">// Storing data in localStorage</span>
+                <span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">setItem</span>(<span class="hljs-string">"username"</span>, <span class="hljs-string">"john_doe"</span>);
+
+                <span class="hljs-comment">// Retrieving data from localStorage</span>
+                <span class="hljs-keyword">const</span> username = <span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">getItem</span>(<span class="hljs-string">"username"</span>);
+
+                <span class="hljs-comment">// Removing data from localStorage</span>
+                <span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">removeItem</span>(<span class="hljs-string">"username"</span>);
+                </code></div></div></pre>
+            <p><strong>2.sessionStorage:</strong> This is similar to <code>localStorage</code>, but it stores data for
+                the duration of a page session. The data is available as long as the page is open and is cleared when
+                the page is closed or refreshed. <code>sessionStorage</code> is useful for temporarily storing data that
+                you need only for a single page load.</p>
+            <pre><div class="bg-black rounded-md mb-4">
+                    <div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-javascript"><span class="hljs-comment">// Storing data in sessionStorage</span>
+                    sessionStorage.<span class="hljs-title function_">setItem</span>(<span class="hljs-string">"theme"</span>, <span class="hljs-string">"dark"</span>);
+
+                    <span class="hljs-comment">// Retrieving data from sessionStorage</span>
+                    <span class="hljs-keyword">const</span> theme = sessionStorage.<span class="hljs-title function_">getItem</span>(<span class="hljs-string">"theme"</span>);
+
+                    <span class="hljs-comment">// Removing data from sessionStorage</span>
+                    sessionStorage.<span class="hljs-title function_">removeItem</span>(<span class="hljs-string">"theme"</span>);
+                    </code></div></div></pre>
+        </div>
+        <div class="section-div">
+            <h5>13 What is cookies? </h5>
+            <p><b>Ans:</b>
+                <span>Cookies are data, stored in small text files, on your computer. <strong>(or)</strong> </span>
+                <span>cookies => A small text file stored on your computer use to remember information about
+                    user</span><br>
+                <span>Cookies were invented to solve the problem "how to remember information about the
+                    user".</span><span> Cookies are saved in name-value pairs </span>
+            <ul>
+                <li>When a user visits a web page, his/her name can be stored in a cookie.</li>
+                <li>Next time the user visits the page, the cookie "remembers" his/her name.</li>
+            </ul>
+
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>14 How do you delete cookies ? </h5>
+            <p><b>Ans:</b>
+            <p>Deleting a cookie is very simple. You don't have to specify a cookie value when you delete a cookie.</p>
+            <p>Just set the expires parameter to a past date:</p>
+            <div class="w3-code notranslate jsHigh" style="position: relative;"><span class="jscolor"
+                    style="color:black">
+                    document.<span class="jspropertycolor" style="color:black">cookie</span> = <span
+                        class="jsstringcolor" style="color:brown">"username=; expires=Thu, 01
+                        Jan 1970 00:00:00 UTC; path=/;"</span>;<span class="jsnumbercolor" style="color:red">
+                    </span> </span></div>
+            <p>You should define the cookie path to ensure that you delete the right cookie.Some browsers will not let
+                you delete a cookie if you don't specify the path.</p>
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>15 Difference between local storage and session storage? </h5>
+            <p><b>Ans:</b>
+            <ol>
+                <li>
+                    <p><code>localStorage</code>:</p>
+                    <ul>
+                        <li><code>localStorage</code> is a type of web storage that allows data to be stored
+                            persistently in the web browser across sessions.</li>
+                        <li>Data stored in <code>localStorage</code> has no expiration date and will remain available
+                            even after the browser is closed and reopened.</li>
+                        <li>The data stored in <code>localStorage</code> is accessible from the same domain and protocol
+                            that set the data. It means data stored on one page of your website can be accessed by other
+                            pages within the same domain.</li>
+                        <li>It is important to note that <code>localStorage</code> has a size limit, typically around
+                            5-10 MB, depending on the browser.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p><code>sessionStorage</code>:</p>
+                    <ul>
+                        <li><code>sessionStorage</code> is another type of web storage that stores data for a single
+                            session. A session lasts as long as the browser tab or window remains open, and the data is
+                            available across multiple pages during that session.</li>
+                        <li>Unlike <code>localStorage</code>, data stored in <code>sessionStorage</code> is cleared when
+                            the browser tab or window is closed. It is meant for temporary storage that is only relevant
+                            during a specific browsing session.</li>
+                        <li>As with <code>localStorage</code>, data stored in <code>sessionStorage</code> is accessible
+                            from the same domain and protocol that set the data.</li>
+                    </ul>
+                </li>
+            </ol>
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>16 What is promise in js? </h5>
+            <p><b>Ans:</b>
+            <p>Promises are used to handle asynchronous operations in JavaScript. </p>
+            <ul>
+                <li>The promise constructor takes only one argument which is a callback function</li>
+                <li>The callback function takes two arguments, <i>resolve</i> and <i>reject</i>
+
+            </ul>
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>17 What are three state of promises? </h5>
+            <p><b>Ans:</b>
+            <ol>
+                <li><strong>pending</strong>: Promise is still pending i.e. not fulfilled or rejected yet
+                    <strong>OR</strong> Wating for result
+                </li>
+                <li><strong>fulfilled</strong>: Action related to the promise succeeded <strong>OR</strong> Action
+                    related to promise is success</li>
+                <li><strong>rejected</strong>: Action related to the promise failed <strong>OR</strong> Action related
+                    to promise is reject</li>
+                <li><strong>settled</strong>: Promise has been fulfilled or rejected <strong>OR</strong> Promise is
+                    either fullfilled or reject</li>
+            </ol>
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>18 What is callback function? </h5>
+            <p><b>Ans:</b>
+            <ul>
+                <li>callback >> A function which is passed as argument in another function</li>
+                <li>A function which is called in another function</li>
+                <li>A function which is exicuted after something happed </li>
+            </ul>
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>19 </h5>
+            <p><b>Ans:</b>
+                Repete
+            </p>
+
+        </div>
+        <div class="section-div">
+            <h5>20 </h5>
+            <p><b>Ans:</b>
+                Repete
+            </p>
+
+        </div>
+
+
+
+
+        <div class="next">
+            <a class="btn btn-success text-white" href="js2.html">Next &rarr;</a>
+            <a class="btn btn-success text-white ml-5" href="js3.html"> Last Page </a>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
