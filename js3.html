@@ -45,7 +45,10 @@
             In JavaScript, exceptions are errors that occur during the execution of your code, and handling them
             properly is important to ensure that your program doesn't crash unexpectedly.
             <br>
-            You can use the try, catch, finally, and throw statements to handle exceptions.
+            You can use the try, catch, finally, and throw statements to handle exceptions. <br>
+            <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*qaGY5RIXvcc7dq8Eaxl2vA.png"
+                class="img-fluid mb-4" alt="">
+
         </div>
         <div class="section-div">
             <h5>44. What is recursion function in js?</h5>
@@ -53,7 +56,15 @@
             problem
             <br>
             a recursive function is one that breaks down a problem into smaller, similar subproblems and solves them
-            iteratively by calling itself with modified parameters.
+            iteratively by calling itself with modified parameters. <br>
+            <img src="https://i.ibb.co/JzgDsKh/recurstion.png" class="img-fluid mb-4" alt="">
+            <ul>
+                <li>The base case checks if <code>n</code> is 0 or 1 and returns 1 in those cases because 0! and 1! are
+                    defined as 1.</li>
+                <li>In the recursive case, the <code>factorial</code> function calls itself with the argument
+                    <code>n - 1</code>, effectively solving a smaller subproblem.
+                </li>
+            </ul>
         </div>
         <div class="section-div">
             <h5>45.What are higher order function?</h5>
@@ -63,6 +74,11 @@
             as values from functions, and assigned to variables. Higher-order functions enable more expressive and
             flexible coding patterns and are a fundamental concept in languages that support functional programming
             paradigms, including JavaScript.
+            <h4>OR</h4>
+            <p>
+                In JavaScript, a higher-order function is a function that can take one or more functions as arguments
+                (parameters) and/or can return a function as its result. </p>
+
         </div>
         <div class="section-div">
             <h5>46.What are concept of timers in js?</h5>
@@ -71,14 +87,32 @@
             animations, periodic updates, and asynchronous operations.
             <br>
             There are three main types of timers in JavaScript:
+            <p><strong><code>1. setTimeout</code>:</strong></p>
             <ul>
-                <li>setTimeout()
-                </li>
-                <li>setInterval()
-                </li>
-                <li>requestAnimationFrame()
-                </li>
+                <li><code>setTimeout</code> is used to execute a function or code snippet after a specified delay,
+                    measured in milliseconds.</li>
+                <img src="https://i.ibb.co/yBjgR2K/1.png" class="img-fluid mb-4" alt="">
             </ul>
+            <p><strong><code>2. setInterval</code>:</strong></p>
+            <ul>
+                <li><code>setInterval</code> is used to repeatedly execute a function or code snippet at a specified
+                    interval.</li>
+                <li>The code will keep executing at the specified interval until <code>clearInterval</code> is called to
+                    stop it.</li>
+                <img src="https://i.ibb.co/XWCC4qs/2.png" class="img-fluid mb-4" alt="">
+
+            </ul>
+            <p><strong><code>3. requestAnimationFrame</code>:</strong></p>
+            <ul>
+                <li><code>requestAnimationFrame</code> is a timer specifically designed for creating smooth animations
+                    in the browser.</li>
+                <li>It schedules a function to be executed before the next repaint of the browser, typically at the
+                    screen's refresh rate (usually 60 times per second).</li>
+                    <img src="https://i.ibb.co/QKmBGTw/3.png" class="img-fluid mb-4" alt="">
+
+            </ul>
+
+
         </div>
         <div class="section-div">
             <h5>47.What are AJAx in js?</h5>
@@ -99,6 +133,12 @@
             Ans - async and await are keywords introduced in JavaScript to simplify asynchronous programming,
             especially when dealing with Promises. They provide a more readable and synchronous-like way to work
             with asynchronous code, making it easier to handle asynchronous operations and avoid callback hell.
+            <p><strong><code>1. async</code> Function:</strong></p>
+            <ul><li>When you declare a function with the <code>async</code> keyword, it becomes an asynchronous function. An async function always returns a Promise, which can resolve to a value or reject with an error.</li><li>Inside an async function, you can use the <code>await</code> keyword to pause the execution of the function until a Promise is resolved. This makes it appear as if the code is executing synchronously, even though it's not blocking the main thread.</li></ul>
+            <p><strong><code>2. await</code> Keyword:</strong></p>
+            <ul><li>The <code>await</code> keyword is used inside an async function to pause execution until a Promise is settled (either resolved or rejected). When <code>await</code> is used, the code following it doesn't execute until the Promise is resolved.</li><li><code>await</code> can be used with any Promise-based operation, such as <code>fetch</code>, <code>setTimeout</code>, or custom Promise-based functions.</li></ul>
+
+            <img src="https://i.ibb.co/p4sdWy3/4.png" class="img-fluid mb-4" alt="">
         </div>
         <div class="section-div">
             <h5>50.Use of Map Object in js?</h5>
@@ -106,6 +146,9 @@
             In JavaScript, the Map object is a built-in data structure that allows you to store key-value pairs
             where both the keys and values can be of any data type, including objects and functions. Unlike the
             Object data type, which uses only strings as keys, Map allows you to use any value as a key.
+
+<img src="https://i.ibb.co/LgP7t4q/code2.png" class="img-fluid mb-4" alt="">
+
         </div>
         <div class="section-div">
             <h5>51.What is xmlHttp request in js?</h5>
@@ -131,7 +174,10 @@
             In JavaScript, negative infinity (represented as -Infinity) is a special numeric value that represents a
             value that is lower (i.e., less) than any other number, including negative numbers. It is often used to
             indicate that a mathematical operation or a result has reached a limit that can't be represented as a
-            finite number.
+            finite number. <br>
+
+            <img src="https://i.ibb.co/F36Dzpx/code3.png" class="img-fluid mb-4" alt="">
+
         </div>
         <div class="section-div">
             <h5>54.What is “this ” key word in js?</h5>
