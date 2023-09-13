@@ -58,12 +58,10 @@
                 </li>
                 <li>
                     <p><strong>Explain the concept of specificity in CSS.</strong></p>
-                    <ul>
-                        <li><strong>Answer:</strong> Specificity determines which CSS rule is applied when multiple
-                            conflicting rules target the same element. It is calculated based on the combination of
-                            selectors and their assigned values. More specific selectors override less specific ones.
-                        </li>
-                    </ul>
+                    <p dir="ltr"><span>When more than one set of CSS rules applies to the same element, the browser will have to decide which specific set will be applied to the element. The rules the browser follows are collectively called </span><b><strong>Specificity</strong></b></p>
+                    <p dir="ltr"><b><strong>Specificity Rules include:&nbsp;</strong></b><span>&nbsp;</span></p>
+                    <ol><li value="1"><span>I</span><b><strong>nline CSS: </strong></b><span>It has the highest specificity and will override all other selectors, including external stylesheets and internal CSS.</span></li><li value="2"><b><strong>Internal CSS: </strong></b><span>Internal stylesheets (defined within the </span><code><span>&lt;style&gt;</span></code><span> tags in the HTML document) have a higher specificity than external stylesheets. Therefore, internal CSS will override rules defined in an external stylesheet.</span></li><li value="3"><b><strong>External CSS:</strong></b><span> Styles defined in an external stylesheet (linked via the </span><code><span>&lt;link&gt;</span></code><span> tag in the HTML document) have the lowest specificity. If there are conflicting rules between external stylesheets and internal or inline styles, the internal or inline styles will take precedence.</span></li></ol>
+
                 </li>
                 <li>
                     <p><strong>What are pseudo-classes in CSS? Provide some examples.</strong></p>
