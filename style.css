@@ -16,6 +16,10 @@
     padding: 10px;
     margin-bottom: 10px;
 }
+.container{
+width: 100%;
+max-width: 100%;
+}
 
 h5 {
     color: blueviolet;
